@@ -350,7 +350,7 @@ footer{position:relative;z-index:10;padding:48px 60px;border-top:1px solid var(-
       </div>
     </div>
     <div class="reveal">
-      <form class="contact-form" id="contactForm" onsubmit="handleSubmit(event)">
+      <form class="contact-form" id="contactForm" action="https://formspree.io/f/xvznzdkp" method="POST">
         <div class="form-row">
           <div class="form-group">
             <label>YOUR NAME</label>
@@ -394,6 +394,8 @@ footer{position:relative;z-index:10;padding:48px 60px;border-top:1px solid var(-
           <textarea placeholder="What are you building? Where are you stuck? What does success look like in 12 months?"></textarea>
         </div>
         <button type="submit" class="form-submit">SEND IT →</button>
+        <input type="hidden" name="_subject" value="New inquiry from schore.agency">
+        <input type="hidden" name="_next" value="https://schore.agency?sent=true">
         <div class="form-note">// We read every message. We respond to every serious inquiry.</div>
       </form>
       <div class="form-success" id="formSuccess">
