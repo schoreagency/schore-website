@@ -1,0 +1,18 @@
+User-agent: *
+Allow: /
+
+# Allow AI crawlers for ChatGPT, Claude, Perplexity visibility
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Googlebot
+Allow: /
+
+# Sitemap location
+Sitemap: https://schore.agency/sitemap.xml
