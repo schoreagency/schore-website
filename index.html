@@ -3,7 +3,28 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>SCHORE — We Build What Comes Next</title>
+<title>SCHORE — Brand Strategy & Performance Marketing Agency</title>
+<meta name="description" content="SCHORE is a brand strategy and performance marketing agency for e-commerce brands. Brand architecture, Meta &amp; Google ads, AI creative systems, SEO, content strategy and e-commerce growth.">
+<meta name="keywords" content="brand strategy agency, performance marketing agency, e-commerce marketing agency, Meta ads agency, Google ads agency, AI creative agency, DTC marketing agency, e-commerce growth agency">
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<meta name="author" content="SCHORE">
+<meta name="theme-color" content="#ff5500">
+<link rel="canonical" href="https://schore.agency/">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://schore.agency/">
+<meta property="og:title" content="SCHORE — Brand Strategy &amp; Performance Marketing Agency">
+<meta property="og:description" content="No names. No faces. Just the system running behind your favorite brands. Brand strategy, performance marketing, and AI creative for e-commerce brands.">
+<meta property="og:image" content="https://schore.agency/favicon-180.png">
+<meta property="og:site_name" content="SCHORE">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@schoreagency">
+<meta name="twitter:creator" content="@schoreagency">
+<meta name="twitter:title" content="SCHORE — Brand Strategy &amp; Performance Marketing Agency">
+<meta name="twitter:description" content="No names. No faces. Just the system running behind your favorite brands.">
+<meta name="twitter:image" content="https://schore.agency/favicon-180.png">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"ProfessionalService","name":"SCHORE","url":"https://schore.agency","logo":"https://schore.agency/favicon-180.png","description":"SCHORE is a brand strategy and performance marketing agency for e-commerce brands. Brand architecture, paid media, AI creative, SEO, content strategy and e-commerce growth.","email":"hello@schore.agency","areaServed":"Worldwide","priceRange":"$$$","sameAs":["https://instagram.com/schore.agency","https://www.facebook.com/schore.agency","https://x.com/schoreagency"],"serviceType":["Brand Strategy","Performance Marketing","AI Creative Systems","Content Strategy","SEO","E-Commerce Growth","Website Development","Email Marketing"]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What services does SCHORE offer?","acceptedAnswer":{"@type":"Answer","text":"SCHORE offers brand strategy, performance marketing on Meta and Google, AI creative systems, content strategy, SEO, email marketing, website development, and e-commerce growth consulting."}},{"@type":"Question","name":"Who does SCHORE work with?","acceptedAnswer":{"@type":"Answer","text":"SCHORE works with e-commerce brands and startups globally — from early-stage founders to scaling brands doing $500K to $20M in revenue."}},{"@type":"Question","name":"How do I get started with SCHORE?","acceptedAnswer":{"@type":"Answer","text":"Fill out the contact form at schore.agency or email hello@schore.agency. We respond within 24 hours."}},{"@type":"Question","name":"Does SCHORE work internationally?","acceptedAnswer":{"@type":"Answer","text":"Yes. SCHORE is fully remote and works with brands across the US, UK, Europe, Middle East, and beyond."}}]}</script>
 <link rel="icon" type="image/png" sizes="48x48" href="favicon-48.png">
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png">
@@ -16,9 +37,12 @@
   --bg: #f4f2ee;
   --bg2: #edeae4;
   --bg3: #e5e2db;
+  --void: #111111;
+  --void2: #1a1a1a;
   --orange: #ff5500;
   --ember: #cc3a00;
   --black: #111111;
+  --text: #111111;
   --dark: #222222;
   --mid: #555555;
   --light: #888888;
@@ -288,6 +312,95 @@ body{animation:pageLoad .5s ease both;}
 .swish{position:absolute;bottom:0;left:0;height:2px;background:var(--orange);animation:swishLine .6s ease forwards;}
 /* Scroll progress bar */
 #progress-bar{position:fixed;top:0;left:0;height:3px;background:var(--orange);z-index:9999;width:0%;transition:width .1s;}
+
+/* ══ CASE STUDY MODAL ══ */
+#cs-modal{position:fixed;inset:0;z-index:9999;display:none;overflow-y:auto;background:#f4f2ee;}
+#cs-modal.open{display:block;}
+@keyframes csSlideUp{from{opacity:0;transform:translateY(40px);}to{opacity:1;transform:translateY(0);}}
+.cs-inner{animation:csSlideUp .45s cubic-bezier(.22,1,.36,1) both;}
+/* Close btn */
+.cs-close{position:fixed;top:24px;right:24px;z-index:10001;width:48px;height:48px;background:#111;border:none;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:5px;padding:14px;transition:background .2s;cursor:none!important;}
+.cs-close:hover{background:#ff5500;}
+.cs-close span{display:block;width:20px;height:2px;background:#fff;transition:transform .25s;}
+.cs-close:hover span:first-child{transform:rotate(45deg) translate(5px,5px);}
+.cs-close:hover span:last-child{transform:rotate(-45deg) translate(5px,-5px);}
+/* Hero */
+.cs-hero{background:#111111;padding:120px 64px 80px;position:relative;overflow:hidden;}
+.cs-hero::before{content:'';position:absolute;inset:0;background-image:linear-gradient(rgba(255,85,0,0.05) 1px,transparent 1px),linear-gradient(90deg,rgba(255,85,0,0.05) 1px,transparent 1px);background-size:60px 60px;pointer-events:none;}
+.cs-hero-tag{font-family:'Share Tech Mono',monospace;font-size:9px;letter-spacing:5px;color:rgba(255,85,0,.7);margin-bottom:24px;display:flex;align-items:center;gap:14px;position:relative;z-index:1;}
+.cs-hero-tag::before{content:'';width:32px;height:1px;background:#ff5500;}
+.cs-client-name{font-family:'Bebas Neue',sans-serif;font-size:clamp(60px,10vw,120px);letter-spacing:4px;color:#ffffff;line-height:.88;margin-bottom:16px;position:relative;z-index:1;}
+.cs-client-name span{color:#ff5500;}
+.cs-tagline{font-size:16px;color:rgba(255,255,255,.5);max-width:560px;line-height:1.85;font-weight:300;position:relative;z-index:1;margin-bottom:56px;}
+/* Hero stats */
+.cs-hero-stats{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:rgba(255,255,255,.06);position:relative;z-index:1;}
+.cs-stat{background:rgba(255,255,255,.03);padding:28px 24px;border-right:1px solid rgba(255,255,255,.06);transition:background .3s;}
+.cs-stat:last-child{border-right:none;}
+.cs-stat:hover{background:rgba(255,85,0,.07);}
+.cs-stat-n{font-family:'Bebas Neue',sans-serif;font-size:44px;color:#ff5500;line-height:1;}
+.cs-stat-l{font-family:'Share Tech Mono',monospace;font-size:8px;letter-spacing:3px;color:rgba(255,255,255,.35);margin-top:6px;}
+/* Body */
+.cs-body{max-width:1100px;margin:0 auto;padding:0 64px 100px;}
+.cs-section{margin-top:80px;}
+.cs-sec-label{font-family:'Share Tech Mono',monospace;font-size:9px;letter-spacing:5px;color:#ff5500;margin-bottom:8px;display:flex;align-items:center;gap:14px;}
+.cs-sec-label::after{content:'';flex:1;height:1px;background:rgba(17,17,17,.15);}
+.cs-sec-title{font-family:'Bebas Neue',sans-serif;font-size:40px;letter-spacing:3px;color:#111111;margin-bottom:24px;}
+/* Two col */
+.cs-2col{display:grid;grid-template-columns:1fr 1fr;gap:3px;background:rgba(17,17,17,.15);}
+.cs-col{background:#f4f2ee;padding:36px 32px;}
+.cs-col-label{font-family:'Share Tech Mono',monospace;font-size:8px;letter-spacing:4px;color:#ff5500;margin-bottom:12px;}
+.cs-col-title{font-family:'Bebas Neue',sans-serif;font-size:22px;letter-spacing:2px;color:#111111;margin-bottom:10px;}
+.cs-col-body{font-size:14px;line-height:1.9;color:#555555;font-weight:400;}
+/* Services */
+.cs-svcs{display:grid;grid-template-columns:repeat(3,1fr);gap:3px;background:rgba(17,17,17,.15);}
+.cs-svc{background:#edeae4;padding:32px 28px;position:relative;overflow:hidden;transition:background .3s;}
+.cs-svc:hover{background:#111111;}
+.cs-svc-top{position:absolute;top:0;left:0;right:0;height:3px;background:#ff5500;transform:scaleX(0);transform-origin:left;transition:transform .35s;}
+.cs-svc:hover .cs-svc-top{transform:scaleX(1);}
+.cs-svc-icon{font-family:'Share Tech Mono',monospace;font-size:9px;letter-spacing:3px;color:#ff5500;margin-bottom:12px;}
+.cs-svc-name{font-family:'Bebas Neue',sans-serif;font-size:20px;letter-spacing:2px;color:#111111;margin-bottom:10px;transition:color .3s;}
+.cs-svc:hover .cs-svc-name{color:#ffffff;}
+.cs-svc-list{list-style:none;padding:0;margin:0;}
+.cs-svc-list li{font-size:12px;color:#555555;line-height:1.75;padding:3px 0 3px 16px;position:relative;transition:color .3s;}
+.cs-svc:hover .cs-svc-list li{color:rgba(255,255,255,.5);}
+.cs-svc-list li::before{content:'//';position:absolute;left:0;font-family:'Share Tech Mono',monospace;font-size:8px;color:#ff5500;}
+/* Timeline */
+.cs-timeline{padding-left:32px;border-left:2px solid rgba(17,17,17,.12);}
+.cs-tl{margin-bottom:36px;position:relative;}
+.cs-tl::before{content:'';position:absolute;left:-38px;top:6px;width:10px;height:10px;background:#ff5500;border-radius:50%;}
+.cs-tl-mo{font-family:'Share Tech Mono',monospace;font-size:8px;letter-spacing:3px;color:#ff5500;margin-bottom:6px;}
+.cs-tl-ti{font-family:'Bebas Neue',sans-serif;font-size:18px;letter-spacing:2px;color:#111111;margin-bottom:6px;}
+.cs-tl-bo{font-size:13px;color:#555555;line-height:1.8;}
+/* Results */
+.cs-results{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:#111111;border-top:3px solid #ff5500;}
+.cs-result{background:#111111;padding:40px 32px;border-right:1px solid rgba(255,255,255,.06);transition:background .3s;}
+.cs-result:last-child{border-right:none;}
+.cs-result:hover{background:rgba(255,85,0,.06);}
+.cs-result-n{font-family:'Bebas Neue',sans-serif;font-size:52px;color:#ff5500;line-height:1;}
+.cs-result-l{font-family:'Share Tech Mono',monospace;font-size:9px;letter-spacing:3px;color:rgba(255,255,255,.4);margin-top:8px;}
+.cs-result-sub{font-size:12px;color:rgba(255,255,255,.2);margin-top:4px;}
+/* Testimonial */
+.cs-testi{background:#edeae4;border-left:4px solid #ff5500;padding:40px 48px;margin-top:3px;}
+.cs-testi-q{font-family:'Bebas Neue',sans-serif;font-size:80px;color:rgba(255,85,0,.1);line-height:.7;margin-bottom:8px;}
+.cs-testi-t{font-size:17px;line-height:1.9;color:#222222;margin-bottom:24px;font-weight:400;}
+.cs-testi-n{font-family:'Bebas Neue',sans-serif;font-size:18px;letter-spacing:2px;color:#ff5500;}
+.cs-testi-r{font-family:'Share Tech Mono',monospace;font-size:9px;letter-spacing:2px;color:#888888;margin-top:4px;}
+/* Next */
+.cs-next{background:#111111;padding:48px 64px;display:flex;justify-content:space-between;align-items:center;margin-top:80px;cursor:none!important;transition:background .3s;}
+.cs-next:hover{background:rgba(255,85,0,.06);}
+.cs-next-lbl{font-family:'Share Tech Mono',monospace;font-size:9px;letter-spacing:4px;color:rgba(255,255,255,.3);margin-bottom:8px;}
+.cs-next-nm{font-family:'Bebas Neue',sans-serif;font-size:36px;letter-spacing:3px;color:#ffffff;}
+.cs-next-arr{font-family:'Bebas Neue',sans-serif;font-size:48px;color:#ff5500;}
+/* Work card CTA */
+.wc-cta{margin-top:20px;font-family:'Share Tech Mono',monospace;font-size:8px;letter-spacing:3px;color:#ff5500;display:flex;align-items:center;gap:8px;transition:gap .25s;}
+.work-card:hover .wc-cta{gap:14px;}
+@media(max-width:768px){
+  .cs-hero{padding:80px 24px 48px;}
+  .cs-hero-stats,.cs-svcs,.cs-results{grid-template-columns:repeat(2,1fr);}
+  .cs-2col{grid-template-columns:1fr;}
+  .cs-body{padding:0 24px 60px;}
+  .cs-next{flex-direction:column;gap:20px;text-align:center;}
+}
 </style>
 <!-- Google Analytics GA4 -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-10EHSDF0Y6"></script>
@@ -481,6 +594,12 @@ body{animation:pageLoad .5s ease both;}
   </div>
 </section>
 
+
+<!-- CASE STUDY MODAL -->
+<div id="cs-modal" role="dialog" aria-modal="true" aria-label="Case Study">
+  <button class="cs-close" onclick="closeCaseStudy()" aria-label="Close case study"><span></span><span></span></button>
+  <div id="cs-inner"></div>
+</div>
 <!-- FOOTER -->
 <footer>
   <div class="footer-logo"><span>S</span>CHORE</div>
@@ -519,7 +638,10 @@ const clients=[
   {n:'SOLVEX',t:'SAAS'},{n:'NORTH LAB',t:'STARTUP'},{n:'VERA',t:'BEAUTY'},
 ];
 const cg=document.getElementById('clientsGrid');
-clients.forEach(c=>{cg.innerHTML+=`<div class="client-cell"><div class="client-name">${c.n}</div><div class="client-type">${c.t}</div></div>`;});
+clients.forEach(c=>{
+  const _keymap={'DRIFTCO':'DRIFTCO','DRIFT CO':'DRIFTCO','NORTHLAB':'NORTHLAB','NORTH LAB':'NORTHLAB'}; const _raw=c.n.replace(/\s+/g,'').toUpperCase(); const _ck=_keymap[_raw]||_keymap[c.n]||_raw;
+  cg.innerHTML+=`<div class="client-cell" onclick="openCS('${_ck}')"><div class="client-name">${c.n}<span style="display:block;font-family:'Share Tech Mono',monospace;font-size:7px;letter-spacing:2px;color:#ff5500;margin-top:3px;opacity:.7;">VIEW CASE →</span></div><div class="client-type">${c.t}</div></div>`;
+});
 
 /* STATS */
 function countUp(el,target,suffix,dur){
@@ -550,7 +672,8 @@ new IntersectionObserver(entries=>{
   {client:'LUMENE — SKINCARE DTC',title:'Scaling a New Product Launch',desc:'Launched a new skincare line with zero brand equity. We built the content ecosystem, ran the influencer strategy, and managed the full paid media stack from day one.',results:[{n:'$620K',l:'LAUNCH MONTH GMV'},{n:'7.1X',l:'META ROAS'},{n:'68%',l:'REPEAT PURCHASE'}],tag:'LAUNCH + PERFORMANCE'},
   {client:'SOLVEX — B2B SAAS',title:'Repositioning for Enterprise',desc:'SOLVEX was losing deals to better-branded competitors. We repositioned the brand, rebuilt the website narrative, and launched a LinkedIn content strategy that changed market perception.',results:[{n:'3X',l:'DEMO REQUESTS'},{n:'+210%',l:'LINKEDIN GROWTH'},{n:'2 ENT.',l:'DEALS CLOSED'}],tag:'BRAND + CONTENT'},
 ].forEach(w=>{
-  document.getElementById('workGrid').innerHTML+=`<div class="work-card reveal"><div class="work-tag">${w.tag}</div><div class="work-client">${w.client}</div><div class="work-title">${w.title}</div><div class="work-desc">${w.desc}</div><div class="work-results">${w.results.map(r=>`<div><div class="wr-n">${r.n}</div><div class="wr-l">${r.l}</div></div>`).join('')}</div></div>`;
+  const _wk=w.client.split('—')[0].trim().replace(/\s+/g,'').toUpperCase();
+  document.getElementById('workGrid').innerHTML+=`<div class="work-card reveal" onclick="openCS('${_wk}')"><div class="work-tag">${w.tag}</div><div class="work-client">${w.client}</div><div class="work-title">${w.title}</div><div class="work-desc">${w.desc}</div><div class="work-results">${w.results.map(r=>`<div><div class="wr-n">${r.n}</div><div class="wr-l">${r.l}</div></div>`).join('')}</div><div class="wc-cta">VIEW FULL CASE STUDY <span>→</span></div></div>`;
 });
 
 /* PROCESS */
@@ -643,6 +766,349 @@ document.querySelectorAll('.sec-tag').forEach(el=>swishObs.observe(el));
 /* REVEAL */
 const ro=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('visible');});},{threshold:.08,rootMargin:'0px 0px -32px 0px'});
 document.querySelectorAll('.reveal').forEach(el=>ro.observe(el));
+
+/* ══ ALL 12 CASE STUDIES ══ */
+const CS={
+  'MANOR':{
+    client:'MANOR',industry:'FASHION E-COMMERCE',tagline:'From $80K to $1.2M monthly revenue in 9 months through complete brand overhaul and performance media.',period:'Q1–Q3 2024',
+    stats:[{n:'$1.2M',l:'MONTHLY REVENUE'},{n:'14.3X',l:'PEAK ROAS'},{n:'-62%',l:'CPA REDUCTION'},{n:'68%',l:'REPEAT PURCHASE'}],
+    challenge:'MANOR had been operating for 3 years with stagnant revenue at $80K/month. Despite a quality product, the brand was invisible in a crowded fashion market — no clear identity, generic messaging, and ad spend generating diminishing returns.',
+    approach:'Product was strong. Brand was weak. Every competitor looked identical. We built an identity so distinct that ads stopped competing on price and started winning on perception. Brand first — always.',
+    services:[
+      {icon:'01//',name:'BRAND ARCHITECTURE',items:['Full brand audit and competitive positioning','New visual identity: logo, color, typography system','Tone of voice and messaging framework','Brand manifesto and guidelines document','Art direction for all brand touchpoints']},
+      {icon:'02//',name:'PERFORMANCE MEDIA',items:['Meta Ads full campaign restructure','Google Ads: Shopping + Search + Retargeting','UGC-led creative strategy (40+ creatives/month)','Triple Whale attribution setup','Weekly optimization + monthly scaling reviews']},
+      {icon:'03//',name:'CONTENT STRATEGY',items:['Instagram content calendar (16 posts/month)','Organic social strategy and execution','Email marketing via Klaviyo (8 flows)','Influencer outreach and brief strategy','Monthly content performance reports']},
+      {icon:'04//',name:'WEBSITE & CRO',items:['Full Shopify theme redesign','Campaign-specific landing pages','Product page CRO audit and optimization','Checkout flow A/B testing','Page speed optimization to 95+ score']},
+      {icon:'05//',name:'SEO',items:['Technical SEO audit and full remediation','Keyword strategy: 120 target terms','On-page optimization across all collections','Blog content: 4 posts/month','Backlink outreach in fashion verticals']},
+      {icon:'06//',name:'AI CREATIVE SYSTEMS',items:['AI creative workflow implementation','40+ ad creatives produced monthly','Dynamic creative testing framework','Creative performance analytics dashboard','Monthly creative strategy sessions']},
+    ],
+    timeline:[
+      {mo:'MONTH 01',ti:'AUDIT & BRAND REBUILD',bo:'Full brand audit. Competitor analysis. New positioning locked. Visual identity delivered. Brand guidelines live.'},
+      {mo:'MONTH 02',ti:'WEBSITE & CAMPAIGN LAUNCH',bo:'New Shopify theme live. Meta and Google restructured. First UGC creatives launched. CPA down 18% immediately.'},
+      {mo:'MONTH 03',ti:'SCALE & OPTIMIZE',bo:'3 winning creative formats identified. CPA down 34% from launch. Budget 2X. Klaviyo email flows activated.'},
+      {mo:'MONTH 04–06',ti:'AI CREATIVE + SEO',bo:'AI creative system deployed. 40 creatives/month. SEO blog live. Organic traffic growing 40% MoM.'},
+      {mo:'MONTH 07–09',ti:'$1.2M ACHIEVED',bo:'$1.2M monthly revenue. 14.3X peak ROAS. 68% repeat purchase. Organic traffic up 340% from SEO.'},
+    ],
+    results:[{n:'$1.2M',l:'MONTHLY REVENUE',s:'from $80K start'},{n:'14.3X',l:'PEAK ROAS',s:'Meta campaigns'},{n:'-62%',l:'CPA REDUCTION',s:'9-month span'},{n:'340%',l:'ORGANIC TRAFFIC',s:'from SEO'},{n:'68%',l:'REPEAT PURCHASE',s:'rate'},{n:'40+',l:'AD CREATIVES',s:'per month'}],
+    testimonial:{t:"SCHORE didn't just run our ads — they rebuilt how we think about our brand entirely. Within 4 months we'd hit numbers we thought were 2 years away.",n:'JAMES T.',r:'FOUNDER, MANOR'},
+    next:'DRIFTCO'
+  },
+  'DRIFTCO':{
+    client:'DRIFT CO',industry:'STREETWEAR DTC',tagline:'Building a streetwear brand from cult following to $800K revenue in 6 months through community-led growth.',period:'Q2–Q4 2024',
+    stats:[{n:'$800K',l:'REVENUE ACHIEVED'},{n:'280%',l:'INSTAGRAM GROWTH'},{n:'9.1X',l:'PEAK ROAS'},{n:'4.2K',l:'NEW CUSTOMERS'}],
+    challenge:"DRIFT CO had a loyal local following but couldn't crack scale. Strong aesthetic identity but no performance infrastructure. Organic reach declining. Paid ads launched once with no strategy — wasted $12K.",
+    approach:'The community was the asset. We built the performance infrastructure around what already worked — the aesthetic, the culture, the audience. Performance follows brand, not the other way.',
+    services:[
+      {icon:'01//',name:'BRAND STRATEGY',items:['Brand positioning for scale without losing authenticity','Community brand architecture','Collaborator and drop strategy','Brand voice expansion for paid media','Brand guidelines for external collaborators']},
+      {icon:'02//',name:'PERFORMANCE MEDIA',items:['Meta Ads: cold acquisition + retargeting','TikTok Ads: awareness and direct response','Google Shopping: full catalog setup','Influencer-to-paid creative pipeline','ROAS-first optimization strategy']},
+      {icon:'03//',name:'COMMUNITY & CONTENT',items:['Community content strategy (20 posts/month)','Drop launch content system','TikTok organic growth strategy','UGC collection and management','Ambassador brief and management']},
+      {icon:'04//',name:'E-COMMERCE',items:['Shopify optimization for drop launches','Limited edition product page templates','Countdown and scarcity mechanics','Mobile checkout optimization','Post-purchase upsell flows']},
+      {icon:'05//',name:'EMAIL & SMS',items:['Drop announcement email sequences','SMS for launch-day urgency','Welcome flow for new customers','Win-back sequence for lapsed buyers','Loyalty mechanic email system']},
+      {icon:'06//',name:'ANALYTICS',items:['Full GA4 e-commerce tracking setup','Meta Pixel and CAPI implementation','Cohort analysis for repeat purchase','Attribution modelling','Weekly performance dashboard']},
+    ],
+    timeline:[
+      {mo:'MONTH 01',ti:'INFRASTRUCTURE BUILD',bo:'GA4, Pixel, CAPI set up. Meta and TikTok accounts structured. Email flows built. First drop campaign brief created.'},
+      {mo:'MONTH 02',ti:'FIRST DROP LAUNCH',bo:'Drop launch campaign generated $180K in 72 hours. TikTok organic video hit 2.1M views. Instagram +12K followers.'},
+      {mo:'MONTH 03–04',ti:'SCALE THE MODEL',bo:'Second and third drops launched using refined playbook. Each outperforming the last. Email list grew to 28K subscribers.'},
+      {mo:'MONTH 05–06',ti:'$800K REVENUE',bo:'$800K total revenue. 9.1X peak ROAS. 280% Instagram growth. Ambassador program with 40 active creators.'},
+    ],
+    results:[{n:'$800K',l:'REVENUE',s:'6-month total'},{n:'9.1X',l:'PEAK ROAS',s:'drop campaigns'},{n:'280%',l:'IG GROWTH',s:'in 6 months'},{n:'28K',l:'EMAIL SUBSCRIBERS',s:'built from 3K'},{n:'40',l:'AMBASSADORS',s:'active creators'},{n:'4.2K',l:'NEW CUSTOMERS',s:'acquired'}],
+    testimonial:{t:'They understood the culture before they touched a single ad. That\'s rare. Our community grew stronger through the campaigns, not weaker.',n:'OMAR K.',r:'FOUNDER, DRIFT CO'},
+    next:'LUMENE'
+  },
+  'LUMENE':{
+    client:'LUMENE',industry:'SKINCARE DTC',tagline:'Launched a skincare brand from zero and generated $620K GMV in the first month.',period:'Q3–Q4 2024',
+    stats:[{n:'$620K',l:'LAUNCH MONTH GMV'},{n:'7.1X',l:'META ROAS'},{n:'68%',l:'REPEAT PURCHASE'},{n:'8K',l:'PRE-LAUNCH EMAILS'}],
+    challenge:'New skincare line. Zero brand equity. Zero audience. 90-day launch deadline. The most saturated DTC category. Standing out required a brand that meant something from day one — not just a pretty logo.',
+    approach:'90 days. Sequenced perfectly. Weeks 1-3: brand. Weeks 4-6: content ecosystem. Weeks 7-10: influencer seeding. Weeks 11-12: paid launch. Everything timed for maximum launch-day impact.',
+    services:[
+      {icon:'01//',name:'BRAND ARCHITECTURE',items:['Brand positioning in skincare category','Visual identity and packaging direction','Brand story and founder narrative (anonymised)','Product naming and benefit messaging','Complete brand guidelines']},
+      {icon:'02//',name:'PERFORMANCE MEDIA',items:['Meta Ads: launch campaign architecture','TikTok Ads: awareness and conversion','Google Shopping: feed optimization','Influencer-sourced creative for paid','7.1X ROAS maintained through launch month']},
+      {icon:'03//',name:'INFLUENCER STRATEGY',items:['200 micro-influencers identified and briefed','Seeding campaign management','Content brief and creative direction','Usage rights negotiation for paid media','Per-influencer performance tracking']},
+      {icon:'04//',name:'CONTENT & SOCIAL',items:['30 pre-launch Instagram posts','TikTok strategy: 10K organic followers pre-launch','Before/after content framework','UGC collection and management','Launch-day community management']},
+      {icon:'05//',name:'EMAIL MARKETING',items:['Pre-launch waitlist: 8,000 subscribers','Launch day email sequence (3 sends)','Post-purchase repeat buying flow','Review solicitation sequence','Abandoned cart recovery (62% recovery rate)']},
+      {icon:'06//',name:'AI CREATIVE',items:['60 ad creatives for launch week','8 hook variations A/B tested simultaneously','AI product photography direction','Creative refresh every 14 days','Top performer scaling strategy']},
+    ],
+    timeline:[
+      {mo:'WEEKS 1–3',ti:'BRAND BUILD',bo:'Brand identity, packaging direction, website designed. Pre-launch waitlist page live day 21.'},
+      {mo:'WEEKS 4–6',ti:'CONTENT ECOSYSTEM',bo:'IG and TikTok accounts built. 30 pre-launch posts scheduled. Email waitlist to 8,000 subscribers.'},
+      {mo:'WEEKS 7–10',ti:'INFLUENCER SEEDING',bo:'200 micro-influencers seeded. TikTok hit 10K organic. First UGC captured for paid creative.'},
+      {mo:'WEEKS 11–12',ti:'PAID LAUNCH',bo:'Campaigns launched with influencer creative. Email to 8K subscribers. Day one: $180K GMV.'},
+      {mo:'MONTH 2+',ti:'SCALE',bo:'$620K GMV month one. 7.1X Meta ROAS. 68% repeat purchase within 60 days.'},
+    ],
+    results:[{n:'$620K',l:'LAUNCH GMV',s:'month one'},{n:'7.1X',l:'META ROAS',s:'launch campaigns'},{n:'68%',l:'REPEAT PURCHASE',s:'within 60 days'},{n:'8K',l:'PRE-LAUNCH EMAILS',s:'waitlist'},{n:'200',l:'INFLUENCERS',s:'seeded'},{n:'60',l:'AD CREATIVES',s:'launch week'}],
+    testimonial:{t:'The AI creative system they built alone was worth the retainer. We went from 4 creatives a month to 60. Our best performers came from the AI workflow.',n:'DANIEL R.',r:'CMO, LUMENE'},
+    next:'KOVA'
+  },
+  'KOVA':{
+    client:'KOVA',industry:'LIFESTYLE BRAND',tagline:'Repositioning a stagnant lifestyle brand and driving 3.4X revenue growth in 12 months.',period:'Q4 2023–Q4 2024',
+    stats:[{n:'3.4X',l:'REVENUE GROWTH'},{n:'5.8X',l:'AVG ROAS'},{n:'-44%',l:'CAC REDUCTION'},{n:'92%',l:'RETENTION RATE'}],
+    challenge:"KOVA had been selling lifestyle products for 5 years with flat growth. The brand had no clear positioning — trying to be everything to everyone. Their ads looked like every other lifestyle brand. Forgettable by design.",
+    approach:"Single-minded positioning. We found the one thing KOVA could own — modern minimalism for intentional living — and built everything around it. One clear idea. Every touchpoint expressing it.",
+    services:[
+      {icon:'01//',name:'BRAND REPOSITIONING',items:['Competitive audit: 40 lifestyle brands analyzed','Single-minded positioning development','New tagline and messaging hierarchy','Visual identity evolution (not revolution)','Brand architecture for product extensions']},
+      {icon:'02//',name:'PAID MEDIA',items:['Meta: full account restructure and creative refresh','Google: Shopping campaigns with feed optimization','Pinterest Ads: lifestyle audience targeting','Retargeting: 7-day, 14-day, 30-day windows','ROAS target: 5X minimum, achieved 5.8X avg']},
+      {icon:'03//',name:'ORGANIC CONTENT',items:['12-month content strategy','Instagram: 16 posts/month, curated grid','Pinterest: 20 pins/week for SEO and referral','Email: weekly newsletter to 45K subscribers','Brand partnership content calendar']},
+      {icon:'04//',name:'SEO',items:['Lifestyle keyword strategy: 80 primary terms','Blog: "intentional living" content hub','Technical SEO complete overhaul','Internal linking architecture','6 months: organic traffic +190%']},
+      {icon:'05//',name:'EMAIL & RETENTION',items:['Complete Klaviyo flow rebuild (10 flows)','Segmentation by product category and LTV','Loyalty programme email strategy','VIP customer early access system','Email contributes 34% of total revenue']},
+      {icon:'06//',name:'ANALYTICS',items:['Customer LTV model built','Cohort retention analysis','Multi-touch attribution setup','Blended ROAS tracking across all channels','Monthly board-level reporting']},
+    ],
+    timeline:[
+      {mo:'Q4 2023',ti:'REPOSITIONING',bo:'Brand audit complete. New positioning locked. Visual identity refreshed. All channels paused for restructure.'},
+      {mo:'Q1 2024',ti:'RELAUNCH',bo:'New brand live across all channels. Meta and Google relaunched. Email redesigned. First month: revenue +40%.'},
+      {mo:'Q2 2024',ti:'GROWTH',bo:'SEO content driving organic traffic. Email at 34% revenue contribution. ROAS averaging 5.8X.'},
+      {mo:'Q3–Q4 2024',ti:'3.4X REVENUE',bo:'3.4X revenue growth vs prior year. 92% client retention. CAC down 44%. Brand recognized in category.'},
+    ],
+    results:[{n:'3.4X',l:'REVENUE GROWTH',s:'year on year'},{n:'5.8X',l:'AVG ROAS',s:'across all paid'},{n:'-44%',l:'CAC REDUCTION',s:'12 months'},{n:'190%',l:'ORGANIC TRAFFIC',s:'from SEO'},{n:'34%',l:'EMAIL REVENUE',s:'contribution'},{n:'92%',l:'RETENTION',s:'client rate'}],
+    testimonial:{t:"We'd tried three repositioning attempts before SCHORE. This was the first one that actually stuck. Revenue reflected it within 60 days.",n:'SARA M.',r:'CEO, KOVA'},
+    next:'NEXLY'
+  },
+  'NEXLY':{
+    client:'NEXLY',industry:'B2B TECH / SAAS',tagline:'Taking a B2B tech brand from unknown to category authority and 220% pipeline growth in 8 months.',period:'Q1–Q3 2024',
+    stats:[{n:'220%',l:'PIPELINE GROWTH'},{n:'4.1X',l:'DEMO REQUESTS'},{n:'+310%',l:'LINKEDIN REACH'},{n:'18',l:'ENTERPRISE LEADS'}],
+    challenge:'NEXLY had strong technology but zero market presence. In B2B tech, brand equals trust. Without brand equity, even strong products lose deals to better-known competitors with inferior technology.',
+    approach:'B2B brand is built through thought leadership, not ads. We made NEXLY the most credible voice in their category through content authority, then layered performance acquisition on top.',
+    services:[
+      {icon:'01//',name:'BRAND & POSITIONING',items:['Category positioning: own the "workflow automation" space','Messaging architecture for technical and business buyers','Visual identity for enterprise credibility','Pitch deck design and narrative','Sales enablement materials']},
+      {icon:'02//',name:'CONTENT AUTHORITY',items:['LinkedIn thought leadership (5 posts/week)','Long-form research reports (2/quarter)','Industry benchmark study (gated lead gen)','Guest posting in industry publications','Podcast outreach: 6 appearances secured']},
+      {icon:'03//',name:'PAID ACQUISITION',items:['LinkedIn Ads: decision-maker targeting','Google Search: high-intent keywords','Retargeting across LinkedIn + Google','ABM (account-based marketing) campaigns','Cost per demo optimized to $280']},
+      {icon:'04//',name:'SEO',items:['B2B SaaS keyword strategy: 60 terms','Technical SEO for new domain','Comparison pages vs 8 competitors','Integration pages for SEO + product','Organic: 310% traffic growth in 8 months']},
+      {icon:'05//',name:'WEBSITE & CRO',items:['Full website rebuild (8 pages)','Demo request flow optimization','Social proof placement strategy','Case study page architecture','A/B testing: 40% lift in demo conversion']},
+      {icon:'06//',name:'EMAIL & NURTURE',items:['Lead nurture sequence (8 emails)','Trial-to-paid conversion campaign','Churned customer win-back','Newsletter: 3.2K subscribers in 6 months','Sales team email templates and sequences']},
+    ],
+    timeline:[
+      {mo:'MONTH 01',ti:'BRAND & WEBSITE',bo:'Positioning locked. Website rebuilt. LinkedIn strategy launched. Sales materials delivered.'},
+      {mo:'MONTH 02–03',ti:'CONTENT AUTHORITY',bo:'Thought leadership content live. Research report published. 2,000 LinkedIn followers gained organically.'},
+      {mo:'MONTH 04–05',ti:'PAID ACQUISITION',bo:'LinkedIn and Google campaigns live. First enterprise leads from paid. Demo requests 2X.'},
+      {mo:'MONTH 06–08',ti:'220% PIPELINE',bo:'220% pipeline growth. 18 enterprise leads. 4.1X demo requests. Category authority established.'},
+    ],
+    results:[{n:'220%',l:'PIPELINE GROWTH',s:'8 months'},{n:'4.1X',l:'DEMO REQUESTS',s:'vs baseline'},{n:'310%',l:'ORGANIC TRAFFIC',s:'from SEO'},{n:'18',l:'ENTERPRISE LEADS',s:'qualified'},{n:'$280',l:'COST PER DEMO',s:'LinkedIn + Google'},{n:'3.2K',l:'NEWSLETTER SUBS',s:'in 6 months'}],
+    testimonial:{t:'SCHORE positioned us as a category leader before we had the market share to prove it. The credibility they built closed deals our sales team had been losing for 18 months.',n:'ALAN C.',r:'CRO, NEXLY'},
+    next:'GROVE'
+  },
+  'GROVE':{
+    client:'GROVE',industry:'D2C FOOD & BEVERAGE',tagline:'Scaling a D2C food brand from farmers market to $450K online revenue and 22K subscribers.',period:'Q2–Q4 2024',
+    stats:[{n:'$450K',l:'ONLINE REVENUE'},{n:'22K',l:'SUBSCRIBERS'},{n:'6.4X',l:'META ROAS'},{n:'74%',l:'SUBSCRIPTION RETENTION'}],
+    challenge:"GROVE was doing $30K/month at farmers markets with a loyal local base but zero online presence. The product was exceptional. The brand was non-existent digitally. Founder had tried Meta ads once — $3K spent, $400 returned.",
+    approach:'Food brands live and die by trust and taste. We built trust through content and community before we spent on acquisition. Subscription model designed from day one — LTV was the only metric that mattered.',
+    services:[
+      {icon:'01//',name:'BRAND FOR DIGITAL',items:['Digital brand identity from physical brand','Brand story and origin narrative','Photography direction for social and ads','Packaging-to-digital visual translation','Brand positioning vs grocery and DTC competitors']},
+      {icon:'02//',name:'PERFORMANCE MEDIA',items:['Meta Ads: video-first creative strategy','Google Shopping: full product catalog','YouTube pre-roll for brand awareness','Subscription-focused conversion campaigns','6.4X ROAS with subscription AOV model']},
+      {icon:'03//',name:'SUBSCRIPTION STRATEGY',items:['Subscription model design and pricing','Recharge implementation on Shopify','Subscription email onboarding (6 emails)','Churn prevention campaign (rescued 28% of cancels)','LTV modelling and cohort analysis']},
+      {icon:'04//',name:'CONTENT & COMMUNITY',items:['Recipe content strategy (4 videos/week)','Instagram: 18 posts/month including UGC','Community group management (12K members)','Influencer chef partnerships (8 collaborations)','Seasonal campaign content system']},
+      {icon:'05//',name:'EMAIL & SMS',items:['Welcome flow for new subscribers','Weekly recipe newsletter (34% open rate)','SMS for flash sales and new drops','Win-back for cancelled subscribers','Subscription anniversary rewards']},
+      {icon:'06//',name:'SEO & CONTENT',items:['Recipe SEO: 40 long-tail keywords','"How to" content for organic discovery','Google featured snippets: 8 owned','Local SEO for farmers market locations','Blog: 4 posts/month, 60K monthly readers']},
+    ],
+    timeline:[
+      {mo:'MONTH 01',ti:'BRAND & STORE',bo:'Digital brand built. Shopify store launched. Subscription model implemented. Photography direction set.'},
+      {mo:'MONTH 02',ti:'CONTENT FOUNDATION',bo:'Recipe content live. Community group at 2K members. First Meta campaigns with video creative.'},
+      {mo:'MONTH 03–04',ti:'SUBSCRIBER GROWTH',bo:'Subscription model gaining traction. 5K subscribers. Email at 34% open rate. ROAS stabilized at 6.4X.'},
+      {mo:'MONTH 05–06',ti:'$450K & 22K SUBS',bo:'$450K online revenue. 22K subscribers. 74% retention. Community at 12K members.'},
+    ],
+    results:[{n:'$450K',l:'ONLINE REVENUE',s:'6-month total'},{n:'22K',l:'SUBSCRIBERS',s:'subscription model'},{n:'6.4X',l:'META ROAS',s:'video campaigns'},{n:'74%',l:'SUBSCRIPTION RETENTION',s:'monthly'},{n:'34%',l:'EMAIL OPEN RATE',s:'weekly newsletter'},{n:'12K',l:'COMMUNITY MEMBERS',s:'group'}],
+    testimonial:{t:"I'd burned $3K on Meta ads with nothing to show. SCHORE fixed the brand first, then the ads. Now we're doing more online in a week than we used to do in a month at the market.",n:'RACHEL T.',r:'FOUNDER, GROVE'},
+    next:'ARCVEST'
+  },
+  'ARCVEST':{
+    client:'ARCVEST',industry:'FINTECH STARTUP',tagline:'Zero to 40,000 users in 6 months at $4.20 per user with a brand built from nothing.',period:'Q2–Q4 2024',
+    stats:[{n:'40K',l:'USERS ACQUIRED'},{n:'$4.20',l:'COST PER USER'},{n:'3.8X',l:'TRIAL CONVERSION'},{n:'6',l:'MONTHS'}],
+    challenge:'ARCVEST entered a crowded fintech market with a strong product but zero brand equity, zero audience, no acquisition strategy, and a compressed timeline. Every competitor had more funding and more brand recognition.',
+    approach:'Brand first. Fintech is a trust industry. You give us your money. Trust is earned through brand credibility, not ads. We refused to run a single paid ad until the brand was ready.',
+    services:[
+      {icon:'01//',name:'BRAND ARCHITECTURE',items:['Brand naming and category positioning','Visual identity: logo, color, type system','Product naming and feature messaging','Brand voice for trust-critical industry','Investor deck design and narrative']},
+      {icon:'02//',name:'PAID ACQUISITION',items:['Meta: user acquisition campaigns','Google Search: high-intent fintech keywords','LinkedIn: professional and B2B targeting','Retargeting across all platforms','CPA optimized to $4.20 at scale']},
+      {icon:'03//',name:'CONTENT & TRUST',items:['Educational content strategy','LinkedIn thought leadership (daily posts)','Blog: 6 articles/month on financial topics','Social proof collection system','Community building strategy']},
+      {icon:'04//',name:'PRODUCT & WEB',items:['Marketing website design and development','Onboarding flow UX redesign','App store listing optimization (ASO)','Landing pages per campaign audience','CRO: demo to signup conversion +40%']},
+      {icon:'05//',name:'SEO',items:['Fintech keyword strategy: 200 terms','Technical SEO from domain launch','Competitor comparison pages (8 competitors)','Featured snippet targeting','Organic: 200% growth by month 6']},
+      {icon:'06//',name:'EMAIL LIFECYCLE',items:['12-email onboarding sequence','Trial to paid conversion campaign','Churn prevention flows','Re-engagement for inactive users','Lifecycle analytics and LTV modelling']},
+    ],
+    timeline:[
+      {mo:'MONTH 01',ti:'BRAND BUILD',bo:'Complete brand identity from zero. Website designed and developed. No ads yet.'},
+      {mo:'MONTH 02',ti:'SOFT LAUNCH',bo:'Website live. First campaigns launched. Email sequence activated. Learning phase.'},
+      {mo:'MONTH 03',ti:'OPTIMIZE',bo:'CPA to $4.20. 3 winning creative formats. LinkedIn added. 3.8X trial conversion rate.'},
+      {mo:'MONTH 04–06',ti:'40K USERS',bo:'Budget 3X. All channels performing. 40K users. $4.20 CPA maintained at scale.'},
+    ],
+    results:[{n:'40K',l:'USERS',s:'from zero'},{n:'$4.20',l:'COST PER USER',s:'at scale'},{n:'3.8X',l:'TRIAL CONVERSION',s:'vs 1.2X industry'},{n:'200%',l:'ORGANIC GROWTH',s:'SEO month 6'},{n:'12',l:'EMAIL FLOWS',s:'lifecycle'},{n:'6',l:'MONTHS',s:'zero to 40K'}],
+    testimonial:{t:"We'd worked with three agencies before SCHORE. None thought like operators. These people understand what it feels like to run a business.",n:'PRIYA K.',r:'CEO, ARCVEST'},
+    next:'HAVEN'
+  },
+  'HAVEN':{
+    client:'HAVEN',industry:'SUSTAINABLE APPAREL',tagline:'Building a sustainable apparel brand that grew 5X in 10 months through values-led marketing.',period:'Q3 2023–Q2 2024',
+    stats:[{n:'5X',l:'REVENUE GROWTH'},{n:'6.9X',l:'META ROAS'},{n:'-38%',l:'CAC REDUCTION'},{n:'82%',l:'REPEAT PURCHASE'}],
+    challenge:"HAVEN sold sustainable clothing but couldn't communicate their values effectively through paid media. Their ads looked like greenwashing. Customers didn't trust the mission. CAC was $90 and climbing.",
+    approach:'Sustainability is not a feature. It is the brand. We rebuilt the entire communication strategy around proof over promise — showing the impact rather than claiming it. Radical transparency.',
+    services:[
+      {icon:'01//',name:'BRAND STRATEGY',items:['Values-led brand positioning','Impact measurement and communication framework','Visual identity for sustainability space','Content strategy: proof over promise','B Corp application messaging support']},
+      {icon:'02//',name:'PAID MEDIA',items:['Meta: values-first creative strategy','Google Shopping with sustainability attributes','Pinterest: sustainable fashion audience','Cause-led creative outperforming product ads','CAC reduced from $90 to $56']},
+      {icon:'03//',name:'CONTENT & IMPACT',items:['Impact content series (monthly reports)','Behind-the-scenes supply chain content','Customer impact calculator widget','UGC from mission-aligned customers','Sustainability blog (SEO + brand)']},
+      {icon:'04//',name:'COMMUNITY',items:['Brand community: 18K members','Ambassador programme: 60 mission-aligned creators','Community content rights for paid media','Annual impact report design','Customer co-creation campaigns']},
+      {icon:'05//',name:'EMAIL & RETENTION',items:['Impact-led welcome sequence','Sustainability tips weekly newsletter','Purchase impact notification emails','Loyalty: plant a tree per order','82% repeat purchase rate achieved']},
+      {icon:'06//',name:'SEO',items:['"Sustainable fashion" keyword cluster','Technical SEO overhaul','Comparison: sustainable vs fast fashion (viral)','Brand search volume grew 340%','Organic: 260% traffic growth']},
+    ],
+    timeline:[
+      {mo:'Q3 2023',ti:'BRAND REBUILD',bo:'Values-led positioning. New creative strategy. Impact measurement framework. Greenwashing eliminated.'},
+      {mo:'Q4 2023',ti:'CONTENT LAUNCH',bo:'Impact content series live. Community at 5K members. CAC starting to fall. First ROAS above 5X.'},
+      {mo:'Q1 2024',ti:'COMMUNITY SCALE',bo:'18K community members. Ambassador programme active. Organic traffic 2X. Email at 82% retention.'},
+      {mo:'Q2 2024',ti:'5X REVENUE',bo:'5X revenue growth. 6.9X ROAS. CAC at $56 (from $90). Brand recognized in sustainable fashion space.'},
+    ],
+    results:[{n:'5X',l:'REVENUE GROWTH',s:'10 months'},{n:'6.9X',l:'META ROAS',s:'values creative'},{n:'$56',l:'CAC',s:'from $90 start'},{n:'18K',l:'COMMUNITY MEMBERS',s:''},{n:'260%',l:'ORGANIC TRAFFIC',s:'from SEO'},{n:'82%',l:'REPEAT PURCHASE',s:'rate'}],
+    testimonial:{t:'They understood sustainable brand marketing better than any agency we spoke to. They knew that proof beats promise — every time.',n:'LISA N.',r:'FOUNDER, HAVEN'},
+    next:'PRIMAL'
+  },
+  'PRIMAL':{
+    client:'PRIMAL',industry:'FITNESS & NUTRITION',tagline:'Scaling a fitness supplement brand from $120K to $1.1M monthly through aggressive paid media and retention.',period:'Q1–Q4 2024',
+    stats:[{n:'$1.1M',l:'MONTHLY REVENUE'},{n:'8.2X',l:'PEAK ROAS'},{n:'52K',l:'ACTIVE CUSTOMERS'},{n:'-55%',l:'CAC REDUCTION'}],
+    challenge:"PRIMAL was spending $40K/month on Meta ads with a 2.1X ROAS — barely profitable. Creative was stale, audiences were burned, and the brand had no differentiation in the most competitive supplement category on the internet.",
+    approach:'Supplements are won on creative, not targeting. We rebuilt the entire creative strategy around education-first content: teach the science, earn the trust, convert with confidence.',
+    services:[
+      {icon:'01//',name:'CREATIVE STRATEGY',items:['Full creative audit: identified fatigue across 80+ ads','Education-first creative framework','Before/after content ethical guidelines','Athlete and expert partnership brief','AI creative system: 50 creatives/month']},
+      {icon:'02//',name:'PAID MEDIA',items:['Meta: complete account restructure','Google: Shopping + branded Search','TikTok: awareness and DTC conversion','Influencer-to-paid creative pipeline','ROAS: 2.1X to 8.2X in 9 months']},
+      {icon:'03//',name:'SUBSCRIPTION & LTV',items:['Subscription model implementation','LTV modelling by product line','Subscription email onboarding','Churn prevention: rescued 31% of cancels','Subscription now 60% of revenue']},
+      {icon:'04//',name:'CONTENT',items:['Science-backed content strategy','YouTube: educational long-form (40K subs)','Instagram: 20 posts/month','TikTok organic: 180K followers','Expert partnership content system']},
+      {icon:'05//',name:'SEO',items:['"Supplement" keyword cluster: 90 terms','Product page optimization for shopping SEO','Ingredient education blog (SEO goldmine)','Comparison pages: 12 competitors','Organic: 280% growth in 12 months']},
+      {icon:'06//',name:'EMAIL & RETENTION',items:['Klaviyo: 14 flows rebuilt from scratch','Education email series: builds trust pre-purchase','Subscription retention: 78% monthly','Loyalty programme: 22K active members','Email: 28% of total revenue']},
+    ],
+    timeline:[
+      {mo:'Q1 2024',ti:'CREATIVE OVERHAUL',bo:'Full creative audit. New framework. First education-first creatives. ROAS climbed from 2.1X to 4.8X.'},
+      {mo:'Q2 2024',ti:'SUBSCRIPTION LAUNCH',bo:'Subscription model live. TikTok organic growing. YouTube channel launched. ROAS at 6.1X.'},
+      {mo:'Q3 2024',ti:'SCALE',bo:'Budget 3X. 30K active customers. TikTok at 100K followers. ROAS peaked at 8.2X.'},
+      {mo:'Q4 2024',ti:'$1.1M/MONTH',bo:'$1.1M monthly revenue. 52K active customers. CAC down 55%. Subscription at 60% of revenue.'},
+    ],
+    results:[{n:'$1.1M',l:'MONTHLY REVENUE',s:'from $120K'},{n:'8.2X',l:'PEAK ROAS',s:'Meta campaigns'},{n:'-55%',l:'CAC REDUCTION',s:'12 months'},{n:'52K',l:'ACTIVE CUSTOMERS',s:''},{n:'280%',l:'ORGANIC TRAFFIC',s:'from SEO'},{n:'60%',l:'SUBSCRIPTION',s:'of revenue'}],
+    testimonial:{t:'Our ROAS went from 2.1X to 8.2X in 9 months. Same product. Completely different brand and creative strategy.',n:'MIKE S.',r:'CMO, PRIMAL'},
+    next:'SOLVEX'
+  },
+  'SOLVEX':{
+    client:'SOLVEX',industry:'B2B SAAS',tagline:'Repositioning a B2B SaaS brand and generating 3X demo requests and 2 enterprise deals in 6 months.',period:'Q3–Q4 2024',
+    stats:[{n:'3X',l:'DEMO REQUESTS'},{n:'+210%',l:'LINKEDIN REACH'},{n:'2 ENT.',l:'DEALS CLOSED'},{n:'$280',l:'COST PER DEMO'}],
+    challenge:'SOLVEX was losing deals to better-branded competitors despite having a technically superior product. The website looked like a 2019 SaaS template. The messaging was feature-first, not outcome-first. Prospects left without engaging.',
+    approach:'In B2B, you are not buying software. You are buying confidence that the vendor will still exist and support you in 3 years. We rebuilt SOLVEX to communicate permanence, credibility, and outcomes.',
+    services:[
+      {icon:'01//',name:'BRAND REPOSITIONING',items:['Outcome-first messaging framework','Competitive positioning vs 6 key competitors','New tagline and value proposition','Visual identity update for enterprise trust','Sales narrative and pitch restructure']},
+      {icon:'02//',name:'WEBSITE REBUILD',items:['Full 10-page website redesign','Outcome-led homepage narrative','Case study page architecture','Pricing page optimization','Demo request conversion: +40%']},
+      {icon:'03//',name:'CONTENT AUTHORITY',items:['LinkedIn content strategy: 5 posts/week','Thought leadership articles (2/month)','Industry comparison content','Video testimonials (3 produced)','ROI calculator tool for lead gen']},
+      {icon:'04//',name:'PAID ACQUISITION',items:['LinkedIn Ads: decision-maker targeting','Google Search: intent-based keywords','Retargeting with case study creative','ABM: 20 target accounts identified','Cost per demo optimized to $280']},
+      {icon:'05//',name:'SEO',items:['SaaS keyword strategy: 50 terms','Competitor comparison pages','Integration partner SEO pages','Technical SEO audit and remediation','Organic traffic: 180% growth in 6 months']},
+      {icon:'06//',name:'SALES ENABLEMENT',items:['Proposal template redesign','Battle cards vs 6 competitors','One-page ROI calculator','Objection handling guide','Email follow-up sequence for demos']},
+    ],
+    timeline:[
+      {mo:'MONTH 01',ti:'REPOSITION',bo:'New positioning locked. Website rebuild started. LinkedIn strategy launched. Old messaging retired.'},
+      {mo:'MONTH 02',ti:'WEBSITE LIVE',bo:'New website live. Demo request rate doubled immediately. LinkedIn following growing +800/month.'},
+      {mo:'MONTH 03–04',ti:'PAID LAUNCH',bo:'LinkedIn and Google campaigns live. First enterprise leads from paid. Sales team equipped with new materials.'},
+      {mo:'MONTH 05–06',ti:'3X DEMOS, 2 DEALS',bo:'3X demo requests. 2 enterprise deals closed. $280 cost per demo. 210% LinkedIn reach growth.'},
+    ],
+    results:[{n:'3X',l:'DEMO REQUESTS',s:'vs baseline'},{n:'2 ENT.',l:'DEALS CLOSED',s:'6 months'},{n:'+210%',l:'LINKEDIN REACH',s:''},{n:'$280',l:'COST PER DEMO',s:'LinkedIn + Google'},{n:'180%',l:'ORGANIC TRAFFIC',s:'6 months'},{n:'+40%',l:'DEMO CONVERSION',s:'website CRO'}],
+    testimonial:{t:'We were losing deals to agencies that looked more credible online. SCHORE fixed that. Two enterprise deals in 6 months paid for the entire engagement many times over.',n:'CLAIRE B.',r:'CEO, SOLVEX'},
+    next:'NORTHLAB'
+  },
+  'NORTHLAB':{
+    client:'NORTH LAB',industry:'DEEP TECH STARTUP',tagline:'Taking a deep tech startup from stealth to $2.4M seed raise with brand and digital presence built in 60 days.',period:'Q4 2024',
+    stats:[{n:'$2.4M',l:'SEED ROUND RAISED'},{n:'60',l:'DAYS TO LAUNCH'},{n:'14K',l:'LINKEDIN FOLLOWERS'},{n:'3',l:'VC INTRO MEETINGS'}],
+    challenge:'NORTH LAB had breakthrough technology but no brand, no digital presence, and a 60-day window before a critical investor meeting series. In deep tech, perception of credibility is everything.',
+    approach:'Investor brand is different from consumer brand. We needed to signal: serious technology, serious team, serious category. Every element had to communicate permanence and technical authority.',
+    services:[
+      {icon:'01//',name:'BRAND FOR INVESTORS',items:['Deep tech brand positioning','Visual identity: credibility-first design','Technical authority messaging framework','Investor narrative and deck design','Brand architecture for IP portfolio']},
+      {icon:'02//',name:'DIGITAL PRESENCE',items:['Website: 6 pages in 3 weeks','LinkedIn company page strategy','Founder LinkedIn personal branding','Technical blog for authority signals','Press kit and media assets']},
+      {icon:'03//',name:'CONTENT AUTHORITY',items:['10 technical blog posts (SEO + credibility)','LinkedIn: founder posts 5x/week','Research summary content (public-safe)','Speaking opportunity outreach','Industry publication guest posts']},
+      {icon:'04//',name:'SEO & DISCOVERY',items:['Deep tech keyword positioning','Google Scholar and research citation strategy','News and PR content for backlinks','Crunchbase and data source optimization','Search presence for investor due diligence']},
+      {icon:'05//',name:'INVESTOR COMMS',items:['Pitch deck design and narrative','Executive summary one-pager','Data room organization and design','Email outreach sequence for VCs','Follow-up sequence post-meeting']},
+      {icon:'06//',name:'PR & VISIBILITY',items:['Press release for stealth exit','Tech media outreach (4 placements)','Podcast outreach: 2 appearances','Award nomination submissions','Conference speaking applications']},
+    ],
+    timeline:[
+      {mo:'WEEK 1–2',ti:'BRAND & NARRATIVE',bo:'Brand identity. Investor positioning. Website structure. LinkedIn strategy. Deck narrative.'},
+      {mo:'WEEK 3–4',ti:'DIGITAL LAUNCH',bo:'Website live. LinkedIn launched. First technical content published. Press release issued.'},
+      {mo:'WEEK 5–8',ti:'AUTHORITY BUILD',bo:'10 technical posts. 4 media placements. LinkedIn at 8K followers. 3 VC intro meetings secured.'},
+      {mo:'WEEK 9–10',ti:'$2.4M RAISED',bo:'Seed round closed at $2.4M. 14K LinkedIn followers. Brand recognized in deep tech community.'},
+    ],
+    results:[{n:'$2.4M',l:'SEED RAISED',s:'60 days'},{n:'60',l:'DAYS',s:'stealth to funded'},{n:'14K',l:'LINKEDIN FOLLOWERS',s:''},{n:'4',l:'MEDIA PLACEMENTS',s:'in 8 weeks'},{n:'3',l:'VC MEETINGS',s:'from content'},{n:'10',l:'TECHNICAL POSTS',s:'published'}],
+    testimonial:{t:"SCHORE built our brand faster than we thought possible. The credibility signal they created was a material factor in our round closing.",n:'DR. JAMES L.',r:'CEO, NORTH LAB'},
+    next:'VERA'
+  },
+  'VERA':{
+    client:'VERA',industry:'BEAUTY & COSMETICS',tagline:'Launching a premium beauty brand that hit $380K in 90 days and built 60K Instagram followers organically.',period:'Q4 2024',
+    stats:[{n:'$380K',l:'90-DAY REVENUE'},{n:'60K',l:'INSTAGRAM FOLLOWERS'},{n:'8.4X',l:'META ROAS'},{n:'72%',l:'REPEAT PURCHASE'}],
+    challenge:'Premium beauty is hyper-competitive and creator-driven. VERA had no creator relationships, no community, no paid media experience, and a 90-day launch deadline with high revenue expectations.',
+    approach:'Beauty brands are built on desire and aspiration. Before we spent a dollar on ads, we made VERA desirable. Creator seeding and organic content built the social proof that made paid media work.',
+    services:[
+      {icon:'01//',name:'BRAND ARCHITECTURE',items:['Premium beauty brand positioning','Visual identity: photography direction, color, type','Packaging design direction','Brand world and mood board','Brand standards for creator content']},
+      {icon:'02//',name:'PERFORMANCE MEDIA',items:['Meta: beauty-vertical creative strategy','TikTok: conversion and awareness split','Google Shopping: beauty category optimization','Creator content → paid media pipeline','8.4X ROAS in launch month']},
+      {icon:'03//',name:'CREATOR STRATEGY',items:['100 beauty creators identified and briefed','Gifting and seeding campaign','Content brief optimized for paid usage','Authentic review collection system','Creator content: 60% of paid media']},
+      {icon:'04//',name:'ORGANIC GROWTH',items:['Instagram: 0 to 60K in 90 days','TikTok: 40K followers organically','Content calendar: 22 posts/month','Reel strategy for algorithmic reach','Story strategy for conversion']},
+      {icon:'05//',name:'EMAIL & RETENTION',items:['Pre-launch waitlist: 6,200 subscribers','Launch email sequence: 4 sends','Post-purchase education sequence','Beauty routine email series','72% repeat purchase achieved']},
+      {icon:'06//',name:'AI CREATIVE',items:['Beauty product AI photography direction','50 ad creatives for launch','8 hook variations per product','Creative performance testing framework','AI creative refresh cycle: 10 days']},
+    ],
+    timeline:[
+      {mo:'MONTH 01 WK 1–2',ti:'BRAND & CREATORS',bo:'Brand identity. 100 creators briefed and seeded. Pre-launch waitlist live. Content calendar built.'},
+      {mo:'MONTH 01 WK 3–4',ti:'ORGANIC GROWTH',bo:'Creator content appearing. 15K Instagram followers. TikTok organic gaining. Waitlist at 6,200.'},
+      {mo:'MONTH 02',ti:'PAID LAUNCH',bo:'Meta and TikTok campaigns live with creator content. 8.4X ROAS from day one. $180K month two.'},
+      {mo:'MONTH 03',ti:'$380K & 60K FOLLOWERS',bo:'$380K 90-day revenue. 60K Instagram. 72% repeat purchase. Community self-sustaining.'},
+    ],
+    results:[{n:'$380K',l:'90-DAY REVENUE',s:''},{n:'60K',l:'IG FOLLOWERS',s:'90 days'},{n:'8.4X',l:'META ROAS',s:'launch month'},{n:'100',l:'CREATORS',s:'seeded'},{n:'72%',l:'REPEAT PURCHASE',s:'rate'},{n:'6.2K',l:'PRE-LAUNCH EMAILS',s:'waitlist'}],
+    testimonial:{t:'60K followers in 90 days with zero paid social for growth. The creator strategy they built was unlike anything we\'d seen. Then the ads just amplified what already worked.',n:'SOPHIE R.',r:'FOUNDER, VERA'},
+    next:'MANOR'
+  }
+};
+
+function openCS(key){
+  const cs=CS[key]||CS[key.replace(/\s+/g,'')];
+  if(!cs)return;
+  const el=document.getElementById('cs-inner');
+  const stat=cs.stats.map(s=>`<div class="cs-stat"><div class="cs-stat-n">${s.n}</div><div class="cs-stat-l">${s.l}</div></div>`).join('');
+  const svc=cs.services.map(s=>`<div class="cs-svc"><div class="cs-svc-top"></div><div class="cs-svc-icon">${s.icon}</div><div class="cs-svc-name">${s.name}</div><ul class="cs-svc-list">${s.items.map(i=>`<li>${i}</li>`).join('')}</ul></div>`).join('');
+  const tl=cs.timeline.map(t=>`<div class="cs-tl"><div class="cs-tl-mo">${t.mo}</div><div class="cs-tl-ti">${t.ti}</div><div class="cs-tl-bo">${t.bo}</div></div>`).join('');
+  const res=cs.results.map(r=>`<div class="cs-result"><div class="cs-result-n">${r.n}</div><div class="cs-result-l">${r.l}</div><div class="cs-result-sub">${r.s}</div></div>`).join('');
+  el.innerHTML=`<div class="cs-inner">
+    <div class="cs-hero">
+      <div class="cs-hero-tag">${cs.industry} // ${cs.period}</div>
+      <div class="cs-client-name"><span>${cs.client[0]}</span>${cs.client.slice(1)}</div>
+      <div class="cs-tagline">${cs.tagline}</div>
+      <div class="cs-hero-stats">${stat}</div>
+    </div>
+    <div class="cs-body">
+      <div class="cs-section">
+        <div class="cs-sec-label">// 01 — THE BRIEF</div>
+        <div class="cs-2col">
+          <div class="cs-col"><div class="cs-col-label">// THE CHALLENGE</div><div class="cs-col-title">WHERE THEY WERE</div><div class="cs-col-body">${cs.challenge}</div></div>
+          <div class="cs-col"><div class="cs-col-label">// THE APPROACH</div><div class="cs-col-title">HOW WE THOUGHT ABOUT IT</div><div class="cs-col-body">${cs.approach}</div></div>
+        </div>
+      </div>
+      <div class="cs-section">
+        <div class="cs-sec-label">// 02 — THE FULL STACK</div>
+        <div class="cs-sec-title">WHAT WE DELIVERED</div>
+        <div class="cs-svcs">${svc}</div>
+      </div>
+      <div class="cs-section">
+        <div class="cs-sec-label">// 03 — THE TIMELINE</div>
+        <div class="cs-sec-title">HOW IT HAPPENED</div>
+        <div class="cs-timeline">${tl}</div>
+      </div>
+      <div class="cs-section">
+        <div class="cs-sec-label">// 04 — THE RESULTS</div>
+        <div class="cs-sec-title">THE OUTCOMES</div>
+        <div class="cs-results">${res}</div>
+      </div>
+      <div class="cs-section">
+        <div class="cs-sec-label">// 05 — CLIENT VOICE</div>
+        <div class="cs-testi"><div class="cs-testi-q">"</div><div class="cs-testi-t">${cs.testimonial.t}</div><div class="cs-testi-n">${cs.testimonial.n}</div><div class="cs-testi-r">${cs.testimonial.r}</div></div>
+      </div>
+      <div class="cs-next" onclick="openCS('${cs.next}')">
+        <div><div class="cs-next-lbl">// NEXT CASE STUDY</div><div class="cs-next-nm">${cs.next}</div></div>
+        <div class="cs-next-arr">→</div>
+      </div>
+    </div>
+  </div>`;
+  const modal=document.getElementById('cs-modal');
+  modal.classList.add('open');
+  modal.scrollTop=0;
+  document.body.style.overflow='hidden';
+}
+
+function closeCaseStudy(){
+  document.getElementById('cs-modal').classList.remove('open');
+  document.body.style.overflow='';
+}
+document.addEventListener('keydown',e=>{if(e.key==='Escape')closeCaseStudy();});
+
 </script>
 </body>
 </html>
