@@ -401,6 +401,28 @@ body{animation:pageLoad .5s ease both;}
   .cs-body{padding:0 24px 60px;}
   .cs-next{flex-direction:column;gap:20px;text-align:center;}
 }
+
+
+
+/* ── FEATURED ON ── */
+#featured-on{padding:56px 64px;background:var(--bg);border-top:3px solid var(--orange);border-bottom:1px solid var(--border-strong);}
+.fo-label{font-family:'Share Tech Mono',monospace;font-size:9px;letter-spacing:5px;color:var(--orange);text-align:center;margin-bottom:32px;display:flex;align-items:center;justify-content:center;gap:16px;}
+.fo-label::before,.fo-label::after{content:'';flex:1;max-width:120px;height:1px;background:var(--border-strong);}
+.fo-heading{font-family:'Bebas Neue',sans-serif;font-size:36px;letter-spacing:4px;color:var(--black);text-align:center;margin-bottom:40px;}
+.fo-heading span{color:var(--orange);}
+.fo-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:2px;background:var(--border-strong);}
+.fo-card{background:var(--bg2);padding:36px 28px;text-align:center;text-decoration:none;transition:all .3s;position:relative;overflow:hidden;}
+.fo-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:var(--orange);transform:scaleX(0);transform-origin:left;transition:transform .35s;}
+.fo-card:hover{background:var(--black);}
+.fo-card:hover::before{transform:scaleX(1);}
+.fo-card-name{font-family:'Bebas Neue',sans-serif;font-size:28px;letter-spacing:4px;color:var(--black);margin-bottom:8px;transition:color .3s;}
+.fo-card:hover .fo-card-name{color:#fff;}
+.fo-card-cat{font-family:'Share Tech Mono',monospace;font-size:8px;letter-spacing:3px;color:var(--light);margin-bottom:16px;transition:color .3s;}
+.fo-card:hover .fo-card-cat{color:rgba(255,255,255,.4);}
+.fo-card-tag{display:inline-block;font-family:'Share Tech Mono',monospace;font-size:8px;letter-spacing:2px;padding:5px 12px;border:1px solid var(--border-strong);color:var(--orange);transition:all .3s;}
+.fo-card:hover .fo-card-tag{border-color:rgba(255,85,0,.4);background:rgba(255,85,0,.1);}
+.fo-sub{font-family:'Share Tech Mono',monospace;font-size:9px;letter-spacing:3px;color:var(--light);text-align:center;margin-top:32px;}
+@media(max-width:768px){#featured-on{padding:48px 24px;}.fo-grid{grid-template-columns:repeat(2,1fr);}}
 </style>
 <!-- Google Analytics GA4 -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-10EHSDF0Y6"></script>
@@ -459,6 +481,35 @@ body{animation:pageLoad .5s ease both;}
 <div class="ticker-wrap">
   <div class="ticker-track" id="ticker"></div>
 </div>
+
+<!-- FEATURED ON -->
+<section id="featured-on">
+  <div class="fo-label">// RECOGNITION</div>
+  <div class="fo-heading">FEATURED ON <span>LEADING</span> PLATFORMS</div>
+  <div class="fo-grid">
+    <a href="https://clutch.co" target="_blank" rel="noopener" class="fo-card">
+      <div class="fo-card-name">CLUTCH</div>
+      <div class="fo-card-cat">// AGENCY DIRECTORY</div>
+      <div class="fo-card-tag">TOP AGENCIES</div>
+    </a>
+    <a href="https://g2.com" target="_blank" rel="noopener" class="fo-card">
+      <div class="fo-card-name">G2</div>
+      <div class="fo-card-cat">// SERVICE MARKETPLACE</div>
+      <div class="fo-card-tag">VERIFIED PROVIDER</div>
+    </a>
+    <a href="https://designrush.com" target="_blank" rel="noopener" class="fo-card">
+      <div class="fo-card-name">DESIGNRUSH</div>
+      <div class="fo-card-cat">// AGENCY RANKING</div>
+      <div class="fo-card-tag">LISTED AGENCY</div>
+    </a>
+    <a href="https://goodfirms.co" target="_blank" rel="noopener" class="fo-card">
+      <div class="fo-card-name">GOODFIRMS</div>
+      <div class="fo-card-cat">// B2B DIRECTORY</div>
+      <div class="fo-card-tag">TOP FIRM</div>
+    </a>
+  </div>
+  <div class="fo-sub">// VERIFIED LISTINGS — INDEPENDENTLY REVIEWED</div>
+</section>
 
 <!-- CLIENTS -->
 <section id="clients" class="section">
