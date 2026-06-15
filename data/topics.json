@@ -1,46 +1,210 @@
 {
   "queue": [
-    {"id": "t02", "category": "META ADS", "topic": "Advantage+ campaigns: when to hand control to the algorithm and when not to"},
-    {"id": "t03", "category": "META ADS", "topic": "Creative fatigue: how to spot it before your ROAS does"},
-    {"id": "t04", "category": "AI & MARKETING", "topic": "The death of the hero shoot: how AI changed ad production economics"},
-    {"id": "t05", "category": "GOOGLE ADS", "topic": "Performance Max: what brands get wrong about feed quality"},
-    {"id": "t06", "category": "TIKTOK", "topic": "TikTok Shop: is it worth the operational overhead for DTC brands"},
-    {"id": "t07", "category": "INDUSTRY", "topic": "Why brand and performance marketing are the same conversation now"},
-    {"id": "t08", "category": "META ADS", "topic": "The CBO vs ABO debate is over, here's what actually matters now"},
-    {"id": "t09", "category": "AI & MARKETING", "topic": "Prompt engineering for ad creative: a practical framework for marketers"},
-    {"id": "t10", "category": "GOOGLE ADS", "topic": "Google Shopping feed optimization for low-margin products"},
-    {"id": "t11", "category": "INDUSTRY", "topic": "The agency model is broken, here's what replaces it"},
-    {"id": "t12", "category": "META ADS", "topic": "Meta retargeting windows: rethinking 7, 14, and 30 day attribution"},
-    {"id": "t13", "category": "TIKTOK", "topic": "Spark Ads vs in-feed: a creative strategy comparison for 2026"},
-    {"id": "t14", "category": "AI & MARKETING", "topic": "AI-generated UGC: ethical lines and what platforms actually allow"},
-    {"id": "t15", "category": "INDUSTRY", "topic": "Customer acquisition cost is the wrong metric to obsess over"},
-    {"id": "t16", "category": "YOUTUBE", "topic": "YouTube Shorts ads: early signals on what's working for DTC brands"},
-    {"id": "t17", "category": "META ADS", "topic": "Why your Meta pixel data might be lying to you"},
-    {"id": "t18", "category": "GOOGLE ADS", "topic": "Branded search campaigns: defending market share vs growing it"},
-    {"id": "t19", "category": "AI & MARKETING", "topic": "How to build an AI creative testing pipeline from scratch"},
-    {"id": "t20", "category": "TIKTOK", "topic": "What TikTok's algorithm rewards in 2026 that it didn't in 2024"},
-    {"id": "t21", "category": "INDUSTRY", "topic": "What brand safety means for AI-generated content"},
-    {"id": "t22", "category": "META ADS", "topic": "Building a UGC pipeline that doesn't rely on influencers"},
-    {"id": "t23", "category": "INDUSTRY", "topic": "Email marketing isn't dead, your flows are just lazy"},
-    {"id": "t24", "category": "AI & MARKETING", "topic": "The AI tools every lean marketing team should actually be using"},
-    {"id": "t25", "category": "GOOGLE ADS", "topic": "YouTube ads inside Google Ads: an underused acquisition channel"},
-    {"id": "t26", "category": "META ADS", "topic": "Scaling Meta budgets without breaking your ROAS"},
-    {"id": "t27", "category": "INDUSTRY", "topic": "The subscription model isn't right for every brand, here's how to know"},
-    {"id": "t28", "category": "TIKTOK", "topic": "Creator whitelisting: the unlock most brands ignore"},
-    {"id": "t29", "category": "AI & MARKETING", "topic": "Why AI won't replace strategists, it replaces production bottlenecks"},
-    {"id": "t30", "category": "INDUSTRY", "topic": "Why most rebrands fail in the first 90 days"},
-    {"id": "t31", "category": "META ADS", "topic": "The hook-first creative framework for Meta feed ads"},
-    {"id": "t32", "category": "YOUTUBE", "topic": "Long-form YouTube as a brand-building channel for e-commerce"},
-    {"id": "t33", "category": "INDUSTRY", "topic": "Attribution is broken, here's how operators actually make decisions"},
-    {"id": "t34", "category": "AI & MARKETING", "topic": "How to brief an AI creative system like a creative director"},
-    {"id": "t35", "category": "INDUSTRY", "topic": "Influencer seeding vs paid partnerships: when each makes sense"},
-    {"id": "t36", "category": "GOOGLE ADS", "topic": "Why Performance Max needs human guardrails, not just budget"},
-    {"id": "t37", "category": "INDUSTRY", "topic": "The real cost of free organic growth"},
-    {"id": "t38", "category": "AI & MARKETING", "topic": "SEO for e-commerce in the age of AI-powered search"},
-    {"id": "t39", "category": "META ADS", "topic": "What a 14X ROAS month actually looks like behind the scenes"},
-    {"id": "t40", "category": "INDUSTRY", "topic": "Why going viral is the worst growth strategy you can plan for"}
+    {
+      "id": "t03",
+      "category": "META ADS",
+      "topic": "Creative fatigue: how to spot it before your ROAS does"
+    },
+    {
+      "id": "t04",
+      "category": "AI & MARKETING",
+      "topic": "The death of the hero shoot: how AI changed ad production economics"
+    },
+    {
+      "id": "t05",
+      "category": "GOOGLE ADS",
+      "topic": "Performance Max: what brands get wrong about feed quality"
+    },
+    {
+      "id": "t06",
+      "category": "TIKTOK",
+      "topic": "TikTok Shop: is it worth the operational overhead for DTC brands"
+    },
+    {
+      "id": "t07",
+      "category": "INDUSTRY",
+      "topic": "Why brand and performance marketing are the same conversation now"
+    },
+    {
+      "id": "t08",
+      "category": "META ADS",
+      "topic": "The CBO vs ABO debate is over, here's what actually matters now"
+    },
+    {
+      "id": "t09",
+      "category": "AI & MARKETING",
+      "topic": "Prompt engineering for ad creative: a practical framework for marketers"
+    },
+    {
+      "id": "t10",
+      "category": "GOOGLE ADS",
+      "topic": "Google Shopping feed optimization for low-margin products"
+    },
+    {
+      "id": "t11",
+      "category": "INDUSTRY",
+      "topic": "The agency model is broken, here's what replaces it"
+    },
+    {
+      "id": "t12",
+      "category": "META ADS",
+      "topic": "Meta retargeting windows: rethinking 7, 14, and 30 day attribution"
+    },
+    {
+      "id": "t13",
+      "category": "TIKTOK",
+      "topic": "Spark Ads vs in-feed: a creative strategy comparison for 2026"
+    },
+    {
+      "id": "t14",
+      "category": "AI & MARKETING",
+      "topic": "AI-generated UGC: ethical lines and what platforms actually allow"
+    },
+    {
+      "id": "t15",
+      "category": "INDUSTRY",
+      "topic": "Customer acquisition cost is the wrong metric to obsess over"
+    },
+    {
+      "id": "t16",
+      "category": "YOUTUBE",
+      "topic": "YouTube Shorts ads: early signals on what's working for DTC brands"
+    },
+    {
+      "id": "t17",
+      "category": "META ADS",
+      "topic": "Why your Meta pixel data might be lying to you"
+    },
+    {
+      "id": "t18",
+      "category": "GOOGLE ADS",
+      "topic": "Branded search campaigns: defending market share vs growing it"
+    },
+    {
+      "id": "t19",
+      "category": "AI & MARKETING",
+      "topic": "How to build an AI creative testing pipeline from scratch"
+    },
+    {
+      "id": "t20",
+      "category": "TIKTOK",
+      "topic": "What TikTok's algorithm rewards in 2026 that it didn't in 2024"
+    },
+    {
+      "id": "t21",
+      "category": "INDUSTRY",
+      "topic": "What brand safety means for AI-generated content"
+    },
+    {
+      "id": "t22",
+      "category": "META ADS",
+      "topic": "Building a UGC pipeline that doesn't rely on influencers"
+    },
+    {
+      "id": "t23",
+      "category": "INDUSTRY",
+      "topic": "Email marketing isn't dead, your flows are just lazy"
+    },
+    {
+      "id": "t24",
+      "category": "AI & MARKETING",
+      "topic": "The AI tools every lean marketing team should actually be using"
+    },
+    {
+      "id": "t25",
+      "category": "GOOGLE ADS",
+      "topic": "YouTube ads inside Google Ads: an underused acquisition channel"
+    },
+    {
+      "id": "t26",
+      "category": "META ADS",
+      "topic": "Scaling Meta budgets without breaking your ROAS"
+    },
+    {
+      "id": "t27",
+      "category": "INDUSTRY",
+      "topic": "The subscription model isn't right for every brand, here's how to know"
+    },
+    {
+      "id": "t28",
+      "category": "TIKTOK",
+      "topic": "Creator whitelisting: the unlock most brands ignore"
+    },
+    {
+      "id": "t29",
+      "category": "AI & MARKETING",
+      "topic": "Why AI won't replace strategists, it replaces production bottlenecks"
+    },
+    {
+      "id": "t30",
+      "category": "INDUSTRY",
+      "topic": "Why most rebrands fail in the first 90 days"
+    },
+    {
+      "id": "t31",
+      "category": "META ADS",
+      "topic": "The hook-first creative framework for Meta feed ads"
+    },
+    {
+      "id": "t32",
+      "category": "YOUTUBE",
+      "topic": "Long-form YouTube as a brand-building channel for e-commerce"
+    },
+    {
+      "id": "t33",
+      "category": "INDUSTRY",
+      "topic": "Attribution is broken, here's how operators actually make decisions"
+    },
+    {
+      "id": "t34",
+      "category": "AI & MARKETING",
+      "topic": "How to brief an AI creative system like a creative director"
+    },
+    {
+      "id": "t35",
+      "category": "INDUSTRY",
+      "topic": "Influencer seeding vs paid partnerships: when each makes sense"
+    },
+    {
+      "id": "t36",
+      "category": "GOOGLE ADS",
+      "topic": "Why Performance Max needs human guardrails, not just budget"
+    },
+    {
+      "id": "t37",
+      "category": "INDUSTRY",
+      "topic": "The real cost of free organic growth"
+    },
+    {
+      "id": "t38",
+      "category": "AI & MARKETING",
+      "topic": "SEO for e-commerce in the age of AI-powered search"
+    },
+    {
+      "id": "t39",
+      "category": "META ADS",
+      "topic": "What a 14X ROAS month actually looks like behind the scenes"
+    },
+    {
+      "id": "t40",
+      "category": "INDUSTRY",
+      "topic": "Why going viral is the worst growth strategy you can plan for"
+    }
   ],
   "used": [
-    {"id": "t01", "category": "AI & MARKETING", "topic": "Why AI creative volume beats AI creative quality in performance testing", "slug": "why-volume-beats-quality-in-ai-creative-testing", "published": "2026-06-08"}
+    {
+      "id": "t01",
+      "category": "AI & MARKETING",
+      "topic": "Why AI creative volume beats AI creative quality in performance testing",
+      "slug": "why-volume-beats-quality-in-ai-creative-testing",
+      "published": "2026-06-08"
+    },
+    {
+      "id": "t02",
+      "category": "META ADS",
+      "topic": "Advantage+ campaigns: when to hand control to the algorithm and when not to",
+      "slug": "advantage-campaigns-control",
+      "published": "2026-06-15"
+    }
   ]
 }
