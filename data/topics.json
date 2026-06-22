@@ -1,11 +1,6 @@
 {
   "queue": [
     {
-      "id": "t03",
-      "category": "META ADS",
-      "topic": "Creative fatigue: how to spot it before your ROAS does"
-    },
-    {
       "id": "t04",
       "category": "AI & MARKETING",
       "topic": "The death of the hero shoot: how AI changed ad production economics"
@@ -205,6 +200,13 @@
       "topic": "Advantage+ campaigns: when to hand control to the algorithm and when not to",
       "slug": "advantage-campaigns-control",
       "published": "2026-06-15"
+    },
+    {
+      "id": "t03",
+      "category": "META ADS",
+      "topic": "Creative fatigue: how to spot it before your ROAS does",
+      "slug": "creative-fatigue",
+      "published": "2026-06-22"
     }
   ]
 }
