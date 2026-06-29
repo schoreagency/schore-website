@@ -1,11 +1,6 @@
 {
   "queue": [
     {
-      "id": "t04",
-      "category": "AI & MARKETING",
-      "topic": "The death of the hero shoot: how AI changed ad production economics"
-    },
-    {
       "id": "t05",
       "category": "GOOGLE ADS",
       "topic": "Performance Max: what brands get wrong about feed quality"
@@ -207,6 +202,13 @@
       "topic": "Creative fatigue: how to spot it before your ROAS does",
       "slug": "creative-fatigue",
       "published": "2026-06-22"
+    },
+    {
+      "id": "t04",
+      "category": "AI & MARKETING",
+      "topic": "The death of the hero shoot: how AI changed ad production economics",
+      "slug": "ai-ends-hero-shoot",
+      "published": "2026-06-29"
     }
   ]
 }
