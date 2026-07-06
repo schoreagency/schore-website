@@ -1,11 +1,6 @@
 {
   "queue": [
     {
-      "id": "t05",
-      "category": "GOOGLE ADS",
-      "topic": "Performance Max: what brands get wrong about feed quality"
-    },
-    {
       "id": "t06",
       "category": "TIKTOK",
       "topic": "TikTok Shop: is it worth the operational overhead for DTC brands"
@@ -209,6 +204,13 @@
       "topic": "The death of the hero shoot: how AI changed ad production economics",
       "slug": "ai-ends-hero-shoot",
       "published": "2026-06-29"
+    },
+    {
+      "id": "t05",
+      "category": "GOOGLE ADS",
+      "topic": "Performance Max: what brands get wrong about feed quality",
+      "slug": "performance-max-feed-issues",
+      "published": "2026-07-06"
     }
   ]
 }
