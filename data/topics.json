@@ -1,11 +1,6 @@
 {
   "queue": [
     {
-      "id": "t06",
-      "category": "TIKTOK",
-      "topic": "TikTok Shop: is it worth the operational overhead for DTC brands"
-    },
-    {
       "id": "t07",
       "category": "INDUSTRY",
       "topic": "Why brand and performance marketing are the same conversation now"
@@ -211,6 +206,13 @@
       "topic": "Performance Max: what brands get wrong about feed quality",
       "slug": "performance-max-feed-issues",
       "published": "2026-07-06"
+    },
+    {
+      "id": "t06",
+      "category": "TIKTOK",
+      "topic": "TikTok Shop: is it worth the operational overhead for DTC brands",
+      "slug": "tiktok-shop-review",
+      "published": "2026-07-13"
     }
   ]
 }
