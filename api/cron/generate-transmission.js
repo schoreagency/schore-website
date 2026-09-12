@@ -305,7 +305,7 @@ function buildPostHTML(post, category, dateStr, slug) {
 
   const schema = `<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"${esc(
     post.title
-  )}","description":"${esc(post.meta_description)}","datePublished":"${dateStr}","author":{"@type":"Organization","name":"SCHORE","url":"${SITE_URL}"},"publisher":{"@type":"Organization","name":"SCHORE","logo":{"@type":"ImageObject","url":"${SITE_URL}/favicon-180.png"}},"mainEntityOfPage":{"@type":"WebPage","@id":"${SITE_URL}/transmissions/${slug}"}}</script>`;
+  )}","description":"${esc(post.meta_description)}","datePublished":"${dateStr}","author":{"@type":"Organization","name":"SCHORE","url":"${SITE_URL}"},"publisher":{"@type":"Organization","name":"SCHORE","logo":{"@type":"ImageObject","url":"${SITE_URL}/og-image.png"}},"dateModified":"${dateStr}","mainEntityOfPage":{"@type":"WebPage","@id":"${SITE_URL}/transmissions/${slug}"}}</script><script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"${SITE_URL}/"},{"@type":"ListItem","position":2,"name":"Transmissions","item":"${SITE_URL}/transmissions"},{"@type":"ListItem","position":3,"name":"${esc(post.title)}","item":"${SITE_URL}/transmissions/${slug}"}]}</script>`;
 
   return `<!DOCTYPE html>
 <html lang="en">
@@ -320,13 +320,21 @@ function buildPostHTML(post, category, dateStr, slug) {
 <meta property="og:url" content="${SITE_URL}/transmissions/${slug}">
 <meta property="og:title" content="${esc(post.title)}">
 <meta property="og:description" content="${esc(post.meta_description)}">
-<meta property="og:image" content="${SITE_URL}/favicon-180.png">
+<meta property="og:image" content="${SITE_URL}/og-image.png">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
 <meta property="og:site_name" content="SCHORE">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@schoreagency">
+<meta name="twitter:creator" content="@schoreagency">
 <meta name="twitter:title" content="${esc(post.title)}">
 <meta name="twitter:description" content="${esc(post.meta_description)}">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
 <link rel="apple-touch-icon" href="/favicon-180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://www.googletagmanager.com">
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500;600&family=Share+Tech+Mono&display=swap" rel="stylesheet">
 <style>${PAGE_CSS}</style>
 ${schema}
