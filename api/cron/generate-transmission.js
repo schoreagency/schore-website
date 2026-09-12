@@ -180,7 +180,24 @@ Voice rules:
 - Write for founders and marketers running e-commerce and DTC brands.
 - Take a clear point of view. Mild contrarian framing is good when it's earned.
 - Use concrete reasoning. Illustrative numbers are fine if framed as typical/illustrative, never claimed as real-time data.
-- Sentence case headings, no title case.`;
+- Sentence case headings, no title case.
+
+Titles are the hardest part and most writers get them wrong. A title must be a complete claim the reader can agree or disagree with, not a label for a topic. It should make the argument of the piece visible before they click.
+
+Good titles, for calibration:
+- "Why volume beats quality in AI creative testing"
+- "Your Meta pixel data is probably lying to you"
+- "Creative fatigue shows up in frequency before it shows up in ROAS"
+- "Performance Max needs guardrails, not more budget"
+
+Bad titles, never write anything like these:
+- "Creative Fatigue" (a topic label, not a claim)
+- "Feed Fumbles" (cute, says nothing)
+- "TikTok Shop Review" (generic, sounds like a listing page)
+- "algorithm control" (a fragment)
+- "The Ultimate Guide to Meta Ads" (SEO filler)
+
+Section headings follow the same rule: full clauses that carry an idea, not one or two word labels.`;
 
 async function generatePost(topic) {
   const userPrompt = `Write a "Transmissions" post for SCHORE on this topic: "${topic.topic}"
@@ -188,19 +205,21 @@ Category: ${topic.category}
 
 Respond with ONLY valid JSON, no markdown formatting, no code fences. Use exactly this structure:
 {
-  "title": "string, under 70 characters",
+  "title": "a complete claim in sentence case, 45 to 70 characters, states the argument, never a bare topic label",
   "slug": "lowercase-hyphenated-slug-under-60-chars",
   "meta_description": "string, under 155 characters, for SEO",
   "hook": "1-2 sentence opening hook, sets up the argument",
   "sections": [
-    {"heading": "string", "body": "2-4 short paragraphs separated by \\n\\n"},
+    {"heading": "a full clause in sentence case that carries an idea, not a one or two word label", "body": "2-4 short paragraphs separated by \\n\\n"},
     {"heading": "string", "body": "..."},
     {"heading": "string", "body": "..."}
   ],
   "takeaway": "2-3 sentence closing paragraph in SCHORE's voice, the point of view to leave the reader with"
 }
 
-3 to 5 sections total.`;
+3 to 5 sections total.
+
+Before you answer, check the title against the calibration examples above. If it reads as a topic label rather than a claim, rewrite it.`;
 
   const r = await fetch(GROQ_API_URL, {
     method: 'POST',
