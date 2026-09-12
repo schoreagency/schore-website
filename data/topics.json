@@ -1,11 +1,6 @@
 {
   "queue": [
     {
-      "id": "t07",
-      "category": "INDUSTRY",
-      "topic": "Why brand and performance marketing are the same conversation now"
-    },
-    {
       "id": "t08",
       "category": "META ADS",
       "topic": "The CBO vs ABO debate is over, here's what actually matters now"
@@ -213,6 +208,13 @@
       "topic": "TikTok Shop: is it worth the operational overhead for DTC brands",
       "slug": "tiktok-shop-review",
       "published": "2026-07-13"
+    },
+    {
+      "id": "t07",
+      "category": "INDUSTRY",
+      "topic": "Why brand and performance marketing are the same conversation now",
+      "slug": "brand-performance-same-conversation",
+      "published": "2026-09-12"
     }
   ]
 }
