@@ -3,7 +3,7 @@
 // SCHORE — Transmissions auto-publisher
 // Triggered weekly by Vercel Cron (see vercel.json).
 // 1. Pulls the next topic from data/topics.json
-// 2. Asks Groq (llama-3.3-70b-versatile) to write the post in SCHORE's voice
+// 2. Asks Groq (openai/gpt-oss-120b by default) to write the post in SCHORE's voice
 // 3. Builds a static HTML page matching the SCHORE design system
 // 4. Commits the new page + updates transmissions/index.html + sitemap.xml + topics.json
 //
@@ -209,7 +209,7 @@ Respond with ONLY valid JSON, no markdown formatting, no code fences. Use exactl
       'Content-Type': 'application/json',
     },
     body: JSON.stringify({
-      model: 'llama-3.3-70b-versatile',
+      model: process.env.GROQ_MODEL || 'openai/gpt-oss-120b',
       messages: [
         { role: 'system', content: SYSTEM_PROMPT },
         { role: 'user', content: userPrompt },
