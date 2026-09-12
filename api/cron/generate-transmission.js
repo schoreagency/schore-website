@@ -234,7 +234,10 @@ Before you answer, check the title against the calibration examples above. If it
         { role: 'user', content: userPrompt },
       ],
       temperature: 0.8,
+      max_tokens: 3500,
       response_format: { type: 'json_object' },
+      reasoning_format: 'hidden',
+      reasoning_effort: 'low',
         reasoning_format: 'hidden',
     }),
   });
