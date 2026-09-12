@@ -1,11 +1,6 @@
 {
   "queue": [
     {
-      "id": "t08",
-      "category": "META ADS",
-      "topic": "The CBO vs ABO debate is over, here's what actually matters now"
-    },
-    {
       "id": "t09",
       "category": "AI & MARKETING",
       "topic": "Prompt engineering for ad creative: a practical framework for marketers"
@@ -214,6 +209,13 @@
       "category": "INDUSTRY",
       "topic": "Why brand and performance marketing are the same conversation now",
       "slug": "brand-performance-same-conversation",
+      "published": "2026-09-12"
+    },
+    {
+      "id": "t08",
+      "category": "META ADS",
+      "topic": "The CBO vs ABO debate is over, here's what actually matters now",
+      "slug": "cbo-abo-false-binary-focus-signal-quality",
       "published": "2026-09-12"
     }
   ]
