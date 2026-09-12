@@ -235,6 +235,7 @@ Before you answer, check the title against the calibration examples above. If it
       ],
       temperature: 0.8,
       response_format: { type: 'json_object' },
+        reasoning_format: 'hidden',
     }),
   });
 
