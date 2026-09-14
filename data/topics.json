@@ -1,11 +1,6 @@
 {
   "queue": [
     {
-      "id": "t09",
-      "category": "AI & MARKETING",
-      "topic": "Prompt engineering for ad creative: a practical framework for marketers"
-    },
-    {
       "id": "t10",
       "category": "GOOGLE ADS",
       "topic": "Google Shopping feed optimization for low-margin products"
@@ -217,6 +212,13 @@
       "topic": "The CBO vs ABO debate is over, here's what actually matters now",
       "slug": "cbo-abo-false-binary-focus-signal-quality",
       "published": "2026-09-12"
+    },
+    {
+      "id": "t09",
+      "category": "AI & MARKETING",
+      "topic": "Prompt engineering for ad creative: a practical framework for marketers",
+      "slug": "prompt-engineering-ad-creative-framework",
+      "published": "2026-09-14"
     }
   ]
 }
