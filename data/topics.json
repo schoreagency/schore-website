@@ -1,11 +1,6 @@
 {
   "queue": [
     {
-      "id": "t10",
-      "category": "GOOGLE ADS",
-      "topic": "Google Shopping feed optimization for low-margin products"
-    },
-    {
       "id": "t11",
       "category": "INDUSTRY",
       "topic": "The agency model is broken, here's what replaces it"
@@ -219,6 +214,13 @@
       "topic": "Prompt engineering for ad creative: a practical framework for marketers",
       "slug": "prompt-engineering-ad-creative-framework",
       "published": "2026-09-14"
+    },
+    {
+      "id": "t10",
+      "category": "GOOGLE ADS",
+      "topic": "Google Shopping feed optimization for low-margin products",
+      "slug": "low-margin-shopping-feed-pruning",
+      "published": "2026-09-21"
     }
   ]
 }
