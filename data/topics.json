@@ -1,11 +1,6 @@
 {
   "queue": [
     {
-      "id": "t11",
-      "category": "INDUSTRY",
-      "topic": "The agency model is broken, here's what replaces it"
-    },
-    {
       "id": "t12",
       "category": "META ADS",
       "topic": "Meta retargeting windows: rethinking 7, 14, and 30 day attribution"
@@ -221,6 +216,13 @@
       "topic": "Google Shopping feed optimization for low-margin products",
       "slug": "low-margin-shopping-feed-pruning",
       "published": "2026-09-21"
+    },
+    {
+      "id": "t11",
+      "category": "INDUSTRY",
+      "topic": "The agency model is broken, here's what replaces it",
+      "slug": "agency-model-broken-operator-led-teams",
+      "published": "2026-09-28"
     }
   ]
 }
