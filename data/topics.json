@@ -1,11 +1,6 @@
 {
   "queue": [
     {
-      "id": "t12",
-      "category": "META ADS",
-      "topic": "Meta retargeting windows: rethinking 7, 14, and 30 day attribution"
-    },
-    {
       "id": "t13",
       "category": "TIKTOK",
       "topic": "Spark Ads vs in-feed: a creative strategy comparison for 2026"
@@ -223,6 +218,13 @@
       "topic": "The agency model is broken, here's what replaces it",
       "slug": "agency-model-broken-operator-led-teams",
       "published": "2026-09-28"
+    },
+    {
+      "id": "t12",
+      "category": "META ADS",
+      "topic": "Meta retargeting windows: rethinking 7, 14, and 30 day attribution",
+      "slug": "meta-retargeting-windows-beyond-7-14-30",
+      "published": "2026-10-05"
     }
   ]
 }
