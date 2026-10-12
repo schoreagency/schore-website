@@ -1,11 +1,6 @@
 {
   "queue": [
     {
-      "id": "t13",
-      "category": "TIKTOK",
-      "topic": "Spark Ads vs in-feed: a creative strategy comparison for 2026"
-    },
-    {
       "id": "t14",
       "category": "AI & MARKETING",
       "topic": "AI-generated UGC: ethical lines and what platforms actually allow"
@@ -225,6 +220,13 @@
       "topic": "Meta retargeting windows: rethinking 7, 14, and 30 day attribution",
       "slug": "meta-retargeting-windows-beyond-7-14-30",
       "published": "2026-10-05"
+    },
+    {
+      "id": "t13",
+      "category": "TIKTOK",
+      "topic": "Spark Ads vs in-feed: a creative strategy comparison for 2026",
+      "slug": "spark-ads-vs-in-feed-creative-strategy-2026",
+      "published": "2026-10-12"
     }
   ]
 }
