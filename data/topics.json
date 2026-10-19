@@ -1,11 +1,6 @@
 {
   "queue": [
     {
-      "id": "t14",
-      "category": "AI & MARKETING",
-      "topic": "AI-generated UGC: ethical lines and what platforms actually allow"
-    },
-    {
       "id": "t15",
       "category": "INDUSTRY",
       "topic": "Customer acquisition cost is the wrong metric to obsess over"
@@ -227,6 +222,13 @@
       "topic": "Spark Ads vs in-feed: a creative strategy comparison for 2026",
       "slug": "spark-ads-vs-in-feed-creative-strategy-2026",
       "published": "2026-10-12"
+    },
+    {
+      "id": "t14",
+      "category": "AI & MARKETING",
+      "topic": "AI-generated UGC: ethical lines and what platforms actually allow",
+      "slug": "ai-generated-ugc-ethics-platform-rules",
+      "published": "2026-10-19"
     }
   ]
 }
