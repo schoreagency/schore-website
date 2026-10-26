@@ -1,11 +1,6 @@
 {
   "queue": [
     {
-      "id": "t15",
-      "category": "INDUSTRY",
-      "topic": "Customer acquisition cost is the wrong metric to obsess over"
-    },
-    {
       "id": "t16",
       "category": "YOUTUBE",
       "topic": "YouTube Shorts ads: early signals on what's working for DTC brands"
@@ -229,6 +224,13 @@
       "topic": "AI-generated UGC: ethical lines and what platforms actually allow",
       "slug": "ai-generated-ugc-ethics-platform-rules",
       "published": "2026-10-19"
+    },
+    {
+      "id": "t15",
+      "category": "INDUSTRY",
+      "topic": "Customer acquisition cost is the wrong metric to obsess over",
+      "slug": "why-obsessing-over-cac-hurts-dtc-growth",
+      "published": "2026-10-26"
     }
   ]
 }
