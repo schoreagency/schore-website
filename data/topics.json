@@ -1,11 +1,6 @@
 {
   "queue": [
     {
-      "id": "t16",
-      "category": "YOUTUBE",
-      "topic": "YouTube Shorts ads: early signals on what's working for DTC brands"
-    },
-    {
       "id": "t17",
       "category": "META ADS",
       "topic": "Why your Meta pixel data might be lying to you"
@@ -231,6 +226,13 @@
       "topic": "Customer acquisition cost is the wrong metric to obsess over",
       "slug": "why-obsessing-over-cac-hurts-dtc-growth",
       "published": "2026-10-26"
+    },
+    {
+      "id": "t16",
+      "category": "YOUTUBE",
+      "topic": "YouTube Shorts ads: early signals on what's working for DTC brands",
+      "slug": "youtube-shorts-ads-beat-feed-ads-hook",
+      "published": "2026-11-02"
     }
   ]
 }
