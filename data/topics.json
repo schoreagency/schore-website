@@ -1,11 +1,6 @@
 {
   "queue": [
     {
-      "id": "t17",
-      "category": "META ADS",
-      "topic": "Why your Meta pixel data might be lying to you"
-    },
-    {
       "id": "t18",
       "category": "GOOGLE ADS",
       "topic": "Branded search campaigns: defending market share vs growing it"
@@ -233,6 +228,13 @@
       "topic": "YouTube Shorts ads: early signals on what's working for DTC brands",
       "slug": "youtube-shorts-ads-beat-feed-ads-hook",
       "published": "2026-11-02"
+    },
+    {
+      "id": "t17",
+      "category": "META ADS",
+      "topic": "Why your Meta pixel data might be lying to you",
+      "slug": "meta-pixel-might-be-lying",
+      "published": "2026-11-09"
     }
   ]
 }
