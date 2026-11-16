@@ -1,11 +1,6 @@
 {
   "queue": [
     {
-      "id": "t18",
-      "category": "GOOGLE ADS",
-      "topic": "Branded search campaigns: defending market share vs growing it"
-    },
-    {
       "id": "t19",
       "category": "AI & MARKETING",
       "topic": "How to build an AI creative testing pipeline from scratch"
@@ -235,6 +230,13 @@
       "topic": "Why your Meta pixel data might be lying to you",
       "slug": "meta-pixel-might-be-lying",
       "published": "2026-11-09"
+    },
+    {
+      "id": "t18",
+      "category": "GOOGLE ADS",
+      "topic": "Branded search campaigns: defending market share vs growing it",
+      "slug": "branded-search-defends-share-not-growth",
+      "published": "2026-11-16"
     }
   ]
 }
